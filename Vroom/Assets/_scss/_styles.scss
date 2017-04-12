@@ -1,10 +1,10 @@
 ﻿$grey: #363636;
 $lt-grey: #474747;
-$pink: #E8175D;
+$accent-color: #E8175D;
 $white: #fff;
 
 @mixin bodyFont(){
-    font-family: 'Droid Serif', sans-serif;
+    font-family: 'Droid Serif', serif;
     font-weight: 400;
 }
 

@@ -81,6 +81,8 @@
     <Content Include="Assets\img\porsche.jpg" />
     <Content Include="Assets\_build\build.css" />
     <Content Include="Assets\_scss\_styles.scss" />
+    <Content Include="cars\CarDetail.aspx" />
+    <Content Include="cars\index.aspx" />
     <Content Include="index.aspx" />
     <Content Include="package.json" />
     <Content Include="Assets\_scss\build.scss" />
@@ -143,6 +145,20 @@
     </Compile>
     <Compile Include="Assets\Controls\header.ascx.designer.cs">
       <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cars\CarDetail.aspx.cs">
+      <DependentUpon>CarDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\CarDetail.aspx.designer.cs">
+      <DependentUpon>CarDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cars\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
