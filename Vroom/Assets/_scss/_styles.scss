@@ -1,0 +1,67 @@
+﻿$grey: #363636;
+$lt-grey: #474747;
+$pink: #E8175D;
+$white: #fff;
+
+@mixin bodyFont(){
+    font-family: 'Droid Serif', sans-serif;
+    font-weight: 400;
+}
+
+@mixin headingFont(){
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    @include bodyFont();
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    @include headingFont();
+}
+
+h3, .h3{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.car-tile{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    color: $white;
+    background-color: $grey;
+
+    &:after{
+        content: '';
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($grey, .7);
+        mix-blend-mode: multiply;
+    }
+
+    h3{
+        position:absolute;
+        width: 100%;
+        text-align:center;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 20;
+        margin: 0;
+        text-shadow: 0 0 12px rgba(0, 0, 0, .25)
+    }
+
+    img{
+        width: 100%;
+        display: block;
+    }
+}

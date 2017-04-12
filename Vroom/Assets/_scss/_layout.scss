@@ -1,0 +1,203 @@
+﻿$gutter: 15px;
+$num_columns: 12;
+
+$bp-s: 568px;
+$bp-s-max: max-width ($bp-s - 1);
+$bp-m: 768px;
+$bp-m-max: max-width ($bp-m - 1);
+$bp-l: 900px;
+$bp-l-max: max-width ($bp-l - 1);
+$bp-xl: 1200px;
+$bp-xl-max: max-width ($bp-xl - 1);
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@function width($num) {
+    @return 100% / $num;
+}
+
+@mixin col($num) {
+    float: left;
+    width: width($num);
+    position: relative;
+}
+
+@mixin allcol($media) {
+    @for $i from 1 through $num_columns {
+        &-#{$i} {
+            padding-left: $gutter;
+            padding-right: $gutter;
+            @include breakpoint($media) {
+                @include col($i);
+            }
+        }
+    }
+}
+
+.container {
+    padding-left: $gutter;
+    padding-right: $gutter;
+    margin: 0 auto;
+
+    @include breakpoint($bp-s) {
+        max-width: $bp-s - (2 * $gutter);
+    }
+
+    @include breakpoint($bp-m) {
+        max-width: $bp-m - (2 * $gutter);
+    }
+
+    @include breakpoint($bp-l) {
+        max-width: $bp-l - (2 * $gutter);
+    }
+
+    @include breakpoint($bp-xl) {
+        max-width: $bp-xl - (2 * $gutter);
+    }
+}
+
+@mixin nopadding {
+    &-12, &-11, &-10, &-9, &-8, &-7, &-6, &-5, &-4, &-3, &-2, &-1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.row {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    &.no-padding {
+        margin-left: 0;
+        margin-right: 0;
+
+        > .col {
+            @include nopadding;
+
+            &-sm, &-md, &-lg, &-xl {
+                @include nopadding;
+            }
+        }
+    }
+
+    &:before, &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+.col {
+    @include allcol(0);
+}
+
+.col-sm {
+    @include allcol($bp-s);
+}
+
+.col-md {
+    @include allcol($bp-m);
+}
+
+.col-lg {
+    @include allcol($bp-l);
+}
+
+.col-xl {
+    @include allcol($bp-xl);
+}
+
+.hidden-xl {
+    @include breakpoint($bp-xl-max) {
+        display: none !important;
+    }
+}
+
+.hidden-lg {
+    @include breakpoint($bp-l-max) {
+        display: none !important;
+    }
+}
+
+.hidden-md {
+    @include breakpoint($bp-m-max) {
+        display: none !important;
+    }
+}
+
+.hidden-sm {
+    @include breakpoint($bp-s-max) {
+        display: none !important;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible-xl {
+    @include breakpoint($bp-xl) {
+        display: none !important;
+    }
+}
+
+.visible-lg {
+    @include breakpoint($bp-l) {
+        display: none !important;
+    }
+}
+
+.visible-md {
+    @include breakpoint($bp-m) {
+        display: none !important;
+    }
+}
+
+.visible-sm {
+    @include breakpoint($bp-s) {
+        display: none !important;
+    }
+}
+
+
+.flex{
+    &-row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        clear: both;
+    
+        .contaner:before, .container:after, .row:before, .row:after{
+            content: normal;
+        }
+    }
+
+    &-center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    }
+
+    &-column {
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    clear: both;
+    height: 100%;
+
+        &_bottom{
+             margin-top: auto;
+        }
+    }
+}
