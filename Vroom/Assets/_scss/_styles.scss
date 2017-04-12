@@ -1,33 +1,50 @@
-﻿$grey: #363636;
-$lt-grey: #474747;
+﻿$grey: #060606;
+$lt-grey: #444;
 $accent-color: #E8175D;
-$white: #fff;
+$white: #F5F9F8;
+
+$banner-padding: 90px 0;
+$banner-padding-tablet: 60px 0;
+$banner-padding-mobile: 30px 0;
 
 @mixin bodyFont(){
     font-family: 'Droid Serif', serif;
-    font-weight: 400;
+    
 }
 
 @mixin headingFont(){
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+
 }
 
 body{
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
+    background-color: #F5F9F8;
+    color: $grey;
     @include bodyFont();
+    font-weight: 400;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     @include headingFont();
+        font-weight: 700;
 }
 
 h3, .h3{
     text-transform: uppercase;
     font-size: 1.25em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 700;
+    margin-top: 0;
+}
+
+p{
+    margin: 0 0 10px;
+}
+
+a{
+    transition: all .15s;
 }
 
 .car-tile{
@@ -63,5 +80,74 @@ h3, .h3{
     img{
         width: 100%;
         display: block;
+    }
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.banner{
+    padding: $banner-padding;
+}
+
+.quote-banner{
+    padding: 100px 0 80px;
+}
+
+.image-reference{
+    float:right;
+    margin: -25px 5px 0;
+    z-index: 10;
+    position: relative;
+    display: block;
+    color: rgba($white, .8);
+    text-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    text-decoration: none;
+    @include headingFont();
+    font-weight: 300;
+    font-size: .6em;
+
+    &:hover, &:focus{
+        color: $white;
+    }
+}
+
+blockquote{
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.2;
+    border-left: 6px solid $accent-color;
+    letter-spacing: .5px;
+    position:relative;
+
+    &:before{
+        content: "";
+        font-size: 475px;
+        color: rgba($lt-grey, .1);
+        position:absolute;      
+        background-image: url('/Assets/img/OpenQuote.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 5px;
+        top: -60px;
+        z-index: -1;
+        width: 180px;
+        height: 180px;
+        opacity: .25;
+    }
+
+    .author{
+        font-size: .8em;
+        color: $lt-grey;
+        margin-top: 10px;
+        font-weight: 300;
+        @include headingFont();
+
+        .publication{
+            font-size: .8em;
+            display: block;
+            font-weight: 300;
+        }
     }
 }
