@@ -85,8 +85,8 @@
     <Content Include="Assets\_build\build.css" />
     <Content Include="Assets\_scss\_styles.scss" />
     <Content Include="cars\CarDetail.aspx" />
-    <Content Include="cars\index.aspx" />
-    <Content Include="index.aspx" />
+    <Content Include="cars\Default.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="package.json" />
     <Content Include="Assets\_scss\build.scss" />
     <Content Include="Assets\MasterPages\Site.Master" />
@@ -156,19 +156,19 @@
     <Compile Include="cars\CarDetail.aspx.designer.cs">
       <DependentUpon>CarDetail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="cars\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="cars\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="cars\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="cars\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\MasterPages\Site.Master.cs">
