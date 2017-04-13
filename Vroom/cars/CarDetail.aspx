@@ -6,19 +6,23 @@
     <div class="headline-banner">
         <div class="container">
             <div class="banner-content">
-        <h2>Porsche 911</h2>
-        <p>Sed ut perspiciatis unde omnis.</p>
-        </div>
+                <h2>Porsche 911</h2>
+                <p>"Sed ut perspiciatis unde omnis."</p>
+                <p class="author">
+                    John Doe
+                <span class="publication">Writer for Publication</span>
+                </p>
             </div>
-         <img class="banner-image" src="/Assets/img/BlackSinger911.jpg" />
-    <a class="image-reference" href="#">http://www.imagereference.com</a>
+        </div>
+        <img class="banner-image" src="/Assets/img/BlackSinger911.jpg" />
+        <a class="image-reference" href="#">http://www.imagereference.com</a>
 
     </div>
 
     <%-- Banner Image --%>
 
-   
-    
+
+
     <%-- Content Section --%>
     <main>
         <div class="banner">
