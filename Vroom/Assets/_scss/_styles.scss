@@ -1,37 +1,46 @@
 ﻿$grey: #060606;
-$lt-grey: #444;
+$lt-grey: #1e1e1e;
 $accent-color: #E8175D;
-$white: #F5F9F8;
+$primary-color: #8dccc1;
+$white: #F6F8F7;
 
-$banner-padding: 90px 0;
-$banner-padding-tablet: 60px 0;
-$banner-padding-mobile: 30px 0;
+$header-height: 45px;
 
-@mixin bodyFont(){
+$banner-padding: 90px;
+$banner-padding-tablet: 60px;
+$banner-padding-mobile: 30px;
+
+@mixin bodyFont() {
     font-family: 'Droid Serif', serif;
-    
 }
 
-@mixin headingFont(){
+@mixin headingFont() {
     font-family: 'Roboto', sans-serif;
-
 }
 
-body{
+body {
     margin: 0;
-    font-size: 20px;
-    background-color: #F5F9F8;
+    font-size: 18px;
+    background-color: $white;
     color: $grey;
-    @include bodyFont();
     font-weight: 400;
+    @include bodyFont();
+
+    @include breakpoint($bp-m) {
+        font-size: 20px;
+    }
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     @include headingFont();
-        font-weight: 700;
+    font-weight: 700;
 }
 
-h3, .h3{
+h2, .h2 {
+    margin-top: 0;
+}
+
+h3, .h3 {
     text-transform: uppercase;
     font-size: 1.25em;
     letter-spacing: 1px;
@@ -39,64 +48,189 @@ h3, .h3{
     margin-top: 0;
 }
 
-p{
+p {
     margin: 0 0 10px;
 }
 
-a{
+a {
     transition: all .15s;
+    color: $accent-color;
+
+    &:hover, &:focus {
+        color: $grey;
+    }
 }
 
-.car-tile{
+.list-inline {
+    list-style: none;
+    margin: 0 -3px;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+}
+
+.brand {
+    font-size: 1em;
+    @include bodyFont();
+    text-decoration: none;
+    margin: 0;
+    font-style: italic;
+    font-weight: 700;
+}
+
+header {
+    position: fixed;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid $lt-grey;
+    transition: all .2s;
+    height: $header-height;
+
+    > .container {
+        height: 100%;
+    }
+
+    &.scrolled {
+        background-color: $grey;
+        border-bottom: 1px solid $grey;
+        color: #fff;
+        padding: 5px 0;
+
+        h1 a, nav a:hover, nav a:focus {
+            color: $white;
+        }
+    }
+
+    h1 {
+        float: left;
+
+        a {
+            color: $grey;
+
+            &:hover, &:focus {
+                color: $accent-color;
+            }
+        }
+    }
+
+    nav {
+        float: right;
+        font-size: .75em;
+        @include headingFont();
+    }
+}
+
+.header-padding {
+    height: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.car-tile {
     display: block;
-    text-align: center;
     text-decoration: none;
     height: 100%;
     color: $white;
     background-color: $grey;
+    transition: all .3s;
 
-    &:after{
+    &:after {
         content: '';
-        position:absolute;
+        position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($grey, .7);
+        background: rgba($grey, .72);
+        background: linear-gradient(to top, rgba($grey, .8) 0, rgba($grey, .72) 15%, rgba($grey, 0) 100%);
+        transition: all .3s;
         mix-blend-mode: multiply;
     }
 
-    h3{
-        position:absolute;
+    .tile-content {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
-        text-align:center;
-        top: 50%;
-        transform: translate(0, -50%);
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        padding: 12px 95px 12px 15px;
         z-index: 20;
-        margin: 0;
-        text-shadow: 0 0 12px rgba(0, 0, 0, .25)
+        text-shadow: 0 0 12px rgba(0, 0, 0, .25);
+
+        p {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0;
+
+            @include breakpoint($bp-m-max) {
+                font-size: 1em;
+            }
+        }
     }
 
-    img{
+    img {
         width: 100%;
         display: block;
     }
+
+    .btn {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+    }
+
+    &:hover, &:focus {
+        color: $white;
+
+        &:after {
+            opacity: .65;
+        }
+
+        .btn {
+            background-color: $white;
+            border-color: $white;
+            color: $grey;
+            transition: all .3s;
+        }
+    }
+} 
+
+.headline-banner {
+    padding: $banner-padding-tablet 0;
+
+    P{
+        margin: 0 0 5px;
+    }
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
 }
 
-.banner{
-    padding: $banner-padding;
+.banner {
+    padding: $banner-padding 0;
 }
 
-.quote-banner{
+.quote-banner {
     padding: 100px 0 80px;
 }
 
-.image-reference{
-    float:right;
+.image-reference {
+    float: right;
     margin: -25px 5px 0;
     z-index: 10;
     position: relative;
@@ -108,24 +242,24 @@ a{
     font-weight: 300;
     font-size: .6em;
 
-    &:hover, &:focus{
+    &:hover, &:focus {
         color: $white;
     }
 }
 
-blockquote{
+blockquote {
     margin: 0;
     padding-left: 20px;
     line-height: 1.2;
     border-left: 6px solid $accent-color;
     letter-spacing: .5px;
-    position:relative;
+    position: relative;
 
-    &:before{
+    &:before {
         content: "";
         font-size: 475px;
         color: rgba($lt-grey, .1);
-        position:absolute;      
+        position: absolute;
         background-image: url('/Assets/img/OpenQuote.svg');
         background-size: contain;
         background-repeat: no-repeat;
@@ -136,19 +270,63 @@ blockquote{
         height: 180px;
         opacity: .25;
     }
-
 }
 
- .author{
-        font-size: .8em;
-        color: $lt-grey;
-        margin-top: 10px;
-        font-weight: 300;
-        @include headingFont();
+.author {
+    font-size: .8em;
+    color: $lt-grey;
+    margin-top: 10px;
+    font-weight: 300;
+    @include headingFont();
 
-        .publication{
-            font-size: .8em;
+    .publication {
+        font-size: .8em;
+        display: block;
+        font-weight: 300;
+    }
+}
+
+footer {
+    padding: 10px 0;
+    background-color: $lt-grey;
+    font-size: 18px;
+
+    .brand {
+        color: $white;
+    }
+
+    nav {
+        @include headingFont();
+        font-weight: 300;
+        font-size: .8em;
+
+        a {
+            color: #cbcbcb;
             display: block;
-            font-weight: 300;
+            margin-left: 5px;
         }
     }
+
+    a:hover, a:focus {
+        color: $primary-color;
+    }
+}
+
+.btn {
+    display: inline-block;
+    @include headingFont();
+    font-size: .75em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border: 1px solid $white;
+    transition: all .15s;
+}
+
+.right-arrow:after {
+    font-size: 1.32em;
+    content: '🡲';
+    font-style: normal;
+    display: inline-block;
+}

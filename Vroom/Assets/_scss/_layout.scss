@@ -1,7 +1,7 @@
 ﻿$gutter: 15px;
 $num_columns: 12;
 
-$bp-s: 568px;
+$bp-s: 375px;
 $bp-s-max: max-width ($bp-s - 1);
 $bp-m: 768px;
 $bp-m-max: max-width ($bp-m - 1);
@@ -13,6 +13,10 @@ $bp-xl-max: max-width ($bp-xl - 1);
 html {
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+body,html{
+    min-width: 375px;
 }
 
 * {
@@ -47,10 +51,6 @@ html {
     padding-left: $gutter;
     padding-right: $gutter;
     margin: 0 auto;
-
-    @include breakpoint($bp-s) {
-        max-width: $bp-s - (2 * $gutter);
-    }
 
     @include breakpoint($bp-m) {
         max-width: $bp-m - (2 * $gutter);
@@ -199,5 +199,9 @@ html {
         &_bottom{
              margin-top: auto;
         }
+    }
+
+    &-1{
+        flex: 1;
     }
 }

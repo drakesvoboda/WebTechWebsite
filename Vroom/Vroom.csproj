@@ -78,10 +78,19 @@
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\LICENSE.txt" />
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\Roboto-regular.svg" />
     <Content Include="Assets\img\BlackSinger911.jpg" />
+    <Content Include="Assets\img\BlueMustang.jpg" />
+    <Content Include="Assets\img\blueprint.jpg" />
     <Content Include="Assets\img\BMW.jpg" />
+    <Content Include="Assets\img\FordMustang.jpg" />
+    <Content Include="Assets\img\FordMustangThumbnail.jpg" />
     <Content Include="Assets\img\FrontRed.jpg" />
+    <Content Include="Assets\img\GT40.jpg" />
+    <Content Include="Assets\img\GT40Thumbnail.jpg" />
+    <Content Include="Assets\img\OpenQuote.svg" />
     <Content Include="Assets\img\porsche.jpg" />
+    <Content Include="Assets\img\references.txt" />
     <Content Include="Assets\img\SingerInterior.jpg" />
+    <Content Include="Assets\js\App.js" />
     <Content Include="Assets\_build\build.css" />
     <Content Include="Assets\_scss\_styles.scss" />
     <Content Include="cars\CarDetail.aspx" />
@@ -179,9 +188,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
