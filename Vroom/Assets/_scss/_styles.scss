@@ -31,7 +31,7 @@ body {
     }
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
     @include headingFont();
     font-weight: 700;
 }
@@ -49,7 +49,7 @@ h3, .h3 {
 }
 
 p {
-    margin: 0 0 10px;
+    margin: 0 0 1em;
 }
 
 a {
@@ -70,6 +70,37 @@ a {
         display: inline-block;
         padding-right: 3px;
         padding-left: 3px;
+    }
+}
+
+.responsive-table{
+    width: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    td, th {
+        border: 0;
+        border-left: 1px solid $white;
+        border-right: 2px solid $white;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: rgba($primary-color, .6);
+        border-bottom: 2px solid $white;
+    }
+
+    td {
+        background-color: rgba($primary-color, .3);
+    }
+
+    tr:nth-of-type(2n) td{
+        background-color: rgba($primary-color, .1);
     }
 }
 
@@ -102,6 +133,7 @@ header {
         border-bottom: 1px solid $grey;
         color: #fff;
         padding: 5px 0;
+        height: $header-height - 10px;
 
         h1 a, nav a:hover, nav a:focus {
             color: $white;
@@ -207,12 +239,12 @@ a {
             transition: all .3s;
         }
     }
-} 
+}
 
 .headline-banner {
     padding: $banner-padding-tablet 0;
 
-    P{
+    P {
         margin: 0 0 5px;
     }
 }
@@ -303,7 +335,6 @@ footer {
         a {
             color: #cbcbcb;
             display: block;
-            margin-left: 5px;
         }
     }
 

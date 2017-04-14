@@ -6,7 +6,7 @@
             <h1 class="flex-1 brand"><a href="/" title="Vroom.com | Homepage">Vroom</a></h1>
             <nav>
                 <ul class="list-inline">
-                    <li><a href="/suggestions.aspx">The Cars</a></li>
+                    <li><a href="/cars">The Cars</a></li>
                     <li>|</li>
                     <li><a href="/suggestions.aspx">Suggestions</a></li>
                 </ul>

@@ -7,39 +7,71 @@
     <%-- Car Headline --%>
     <div class="headline-banner">
         <div class="container">
-                <h2>Porsche 911</h2>
-                <p>"Sed ut perspiciatis unde omnis."</p>
-                <p class="author">
-                    John Doe
+            <h2>Porsche 911</h2>
+            <p>"Sed ut perspiciatis unde omnis."</p>
+            <p class="author">
+                John Doe
                 <span class="publication">Writer for Publication</span>
-                </p>
+            </p>
         </div>
     </div>
 
 
     <%-- Banner Image --%>
-     <img class="banner-image" src="/Assets/img/BlackSinger911.jpg" />
-        <a class="image-reference" href="#">http://www.imagereference.com</a>
+    <img class="banner-image" src="/Assets/img/BlackSinger911.jpg" />
+    <a class="image-reference" href="#">http://www.imagereference.com</a>
 
 
     <%-- Content Section --%>
-    <main>
+    <div>
         <div class="banner">
             <div class="container">
-                <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                    tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
-                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
                 </p>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model Year</th>
+                                <th>Horse Power</th>
+                                <th>Torque</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <%-- Two Column Image --%>
     <div class="row no-padding">
@@ -59,9 +91,9 @@
         <div class="container">
             <blockquote cite="/">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-            commodo consequat.
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat.
              <p class="author">
                  John Doe
                 <span class="publication">Writer for Publication</span>
@@ -72,7 +104,7 @@
 
     <%-- Related Cars Callout --%>
     <section class="row flex-row no-padding">
-       <div class="col-md-3 col-sm-2 col-1">
+        <div class="col-md-3 col-sm-2 col-1">
             <a href="/cars/cardetail.aspx" class="car-tile">
                 <img src="/Assets/img/BMW.jpg" />
                 <div class="tile-content">

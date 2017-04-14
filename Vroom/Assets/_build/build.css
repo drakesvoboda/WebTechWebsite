@@ -1060,7 +1060,7 @@ body {
   }
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
@@ -1078,7 +1078,7 @@ h3, .h3 {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 1em;
 }
 
 a {
@@ -1100,6 +1100,37 @@ a:hover, a:focus {
   display: inline-block;
   padding-right: 3px;
   padding-left: 3px;
+}
+
+.responsive-table {
+  width: auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 0;
+  border-left: 1px solid #F6F8F7;
+  border-right: 2px solid #F6F8F7;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: rgba(141, 204, 193, 0.6);
+  border-bottom: 2px solid #F6F8F7;
+}
+
+table td {
+  background-color: rgba(141, 204, 193, 0.3);
+}
+
+table tr:nth-of-type(2n) td {
+  background-color: rgba(141, 204, 193, 0.1);
 }
 
 .brand {
@@ -1132,6 +1163,7 @@ header.scrolled {
   border-bottom: 1px solid #060606;
   color: #fff;
   padding: 5px 0;
+  height: 35px;
 }
 
 header.scrolled h1 a, header.scrolled nav a:hover, header.scrolled nav a:focus {
@@ -1336,7 +1368,6 @@ footer nav {
 footer nav a {
   color: #cbcbcb;
   display: block;
-  margin-left: 5px;
 }
 
 footer a:hover, footer a:focus {

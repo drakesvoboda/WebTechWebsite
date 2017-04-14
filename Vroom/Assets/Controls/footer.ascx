@@ -11,7 +11,8 @@
             <nav>
                 <ul class="list-inline">
                     <li><a href="#">Site Map</a></li>
-                    <li><a href="#">The Cars</a></li>
+                    <li>|</li>
+                    <li><a href="/cars">The Cars</a></li>
                 </ul>
             </nav>
         </div>
