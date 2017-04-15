@@ -1,4 +1,5 @@
-/// <vs SolutionOpened='sass:watch' />
+'use strict';
+
 var gulp = require('gulp');
 var merge = require('merge-stream');
 var concat = require('gulp-concat');
@@ -8,7 +9,7 @@ var plugin = require("gulp-load-plugins")({
     replaceString: /\bgulp[\-.]/
 });
 
-var package = require('./package.json');
+var pack = require('./package.json');
 
 gulp.task('sass', function () {
     var sassStream = gulp.src('./Assets/_scss/*.scss')

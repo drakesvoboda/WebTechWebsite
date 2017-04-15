@@ -1,42 +1,77 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="CarDetail.aspx.cs" Inherits="Vroom.index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="CarDetail.aspx.cs" Inherits="Vroom.cars.CarDetail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div class="header-padding"></div>
 
     <%-- Car Headline --%>
     <div class="headline-banner">
         <div class="container">
-            <div class="banner-content">
-        <h2>Porsche 911</h2>
-        <p>Sed ut perspiciatis unde omnis.</p>
+            <h2>Porsche 911</h2>
+            <p>"Sed ut perspiciatis unde omnis."</p>
+            <p class="author">
+                John Doe
+                <span class="publication">Writer for Publication</span>
+            </p>
         </div>
-            </div>
-         <img class="banner-image" src="/Assets/img/BlackSinger911.jpg" />
-    <a class="image-reference" href="#">http://www.imagereference.com</a>
-
     </div>
 
-    <%-- Banner Image --%>
 
-   
-    
+    <%-- Banner Image --%>
+    <img class="banner-image" src="/Assets/img/BlackSinger911.jpg" />
+    <a class="image-reference" href="#">http://www.imagereference.com</a>
+
+
     <%-- Content Section --%>
-    <main>
+    <div>
         <div class="banner">
             <div class="container">
-                <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                    tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
-                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
                 </p>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model Year</th>
+                                <th>Horse Power</th>
+                                <th>Torque</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td>160 hp</td>
+                                <td>650 fp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <%-- Two Column Image --%>
     <div class="row no-padding">
@@ -56,9 +91,9 @@
         <div class="container">
             <blockquote cite="/">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-            commodo consequat.
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat.
              <p class="author">
                  John Doe
                 <span class="publication">Writer for Publication</span>
@@ -69,29 +104,41 @@
 
     <%-- Related Cars Callout --%>
     <section class="row flex-row no-padding">
-        <div class="col-md-3 col-2">
-            <a href="#" class="car-tile">
+        <div class="col-md-3 col-sm-2 col-1">
+            <a href="/cars/cardetail.aspx" class="car-tile">
                 <img src="/Assets/img/BMW.jpg" />
-                <h3>Lorem Ipsum</h3>
+                <div class="tile-content">
+                    <div>
+                        <h3>BMW E30</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
+                    </div>
+                </div>
             </a>
         </div>
-        <div class="col-md-3 col-2">
-            <a href="#" class="car-tile">
+        <div class="col-md-3 col-sm-2 col-1">
+            <a href="/cars/cardetail.aspx" class="car-tile">
                 <img src="/Assets/img/porsche.jpg" />
-                <h3>Lorem Ipsum</h3>
+                <div class="tile-content">
+                    <div>
+                        <h3>Porsche 911</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
+                    </div>
+                </div>
             </a>
         </div>
-        <div class="col-md-3 col-2">
-            <a href="#" class="car-tile">
-                <h3>More ></h3>
+        <div class="col-md-3 col-sm-2 col-1">
+            <a href="/cars" class="car-tile">
+                <img src="/Assets/img/blueprint.jpg" />
+                <div class="tile-content">
+                    <div>
+                        <h3>More</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
+                    </div>
+                </div>
             </a>
         </div>
     </section>
 
-    <section class="container suggest-banner">
-        <h4>Have a car in mind that we haven't included?
-            <a href="#">Make a Suggestion</a>
-        </h4>
-    </section>
+
 
 </asp:Content>

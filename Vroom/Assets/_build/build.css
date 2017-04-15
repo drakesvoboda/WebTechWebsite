@@ -112,9 +112,14 @@
 }
 
 
+@charset "UTF-8";
 html {
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+body, html {
+  min-width: 375px;
 }
 
 * {
@@ -127,12 +132,6 @@ html {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-
-@media (min-width: 568px) {
-  .container {
-    max-width: 538px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -340,7 +339,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-1 {
     float: left;
     width: 100%;
@@ -353,7 +352,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-2 {
     float: left;
     width: 50%;
@@ -366,7 +365,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-3 {
     float: left;
     width: 33.33333%;
@@ -379,7 +378,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-4 {
     float: left;
     width: 25%;
@@ -392,7 +391,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-5 {
     float: left;
     width: 20%;
@@ -405,7 +404,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-6 {
     float: left;
     width: 16.66667%;
@@ -418,7 +417,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-7 {
     float: left;
     width: 14.28571%;
@@ -431,7 +430,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-8 {
     float: left;
     width: 12.5%;
@@ -444,7 +443,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-9 {
     float: left;
     width: 11.11111%;
@@ -457,7 +456,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-10 {
     float: left;
     width: 10%;
@@ -470,7 +469,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-11 {
     float: left;
     width: 9.09091%;
@@ -483,7 +482,7 @@ html {
   padding-right: 15px;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .col-sm-12 {
     float: left;
     width: 8.33333%;
@@ -977,7 +976,7 @@ html {
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 374px) {
   .hidden-sm {
     display: none !important;
   }
@@ -1005,7 +1004,7 @@ html {
   }
 }
 
-@media (min-width: 568px) {
+@media (min-width: 375px) {
   .visible-sm {
     display: none !important;
   }
@@ -1042,18 +1041,32 @@ html {
   margin-top: auto;
 }
 
-body {
-  margin: 0;
-  font-size: 20px;
-  background-color: #F5F9F8;
-  color: #060606;
-  font-family: 'Droid Serif', serif;
-  font-weight: 400;
+.flex-1 {
+  flex: 1;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+body {
+  margin: 0;
+  font-size: 18px;
+  background-color: #F6F8F7;
+  color: #060606;
+  font-weight: 400;
+  font-family: 'Droid Serif', serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+}
+
+h2, .h2 {
+  margin-top: 0;
 }
 
 h3, .h3 {
@@ -1065,20 +1078,131 @@ h3, .h3 {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 1em;
 }
 
 a {
   transition: all .15s;
+  color: #E8175D;
+}
+
+a:hover, a:focus {
+  color: #060606;
+}
+
+.list-inline {
+  list-style: none;
+  margin: 0 -3px;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.responsive-table {
+  width: auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 0;
+  border-left: 1px solid #F6F8F7;
+  border-right: 2px solid #F6F8F7;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: rgba(141, 204, 193, 0.6);
+  border-bottom: 2px solid #F6F8F7;
+}
+
+table td {
+  background-color: rgba(141, 204, 193, 0.3);
+}
+
+table tr:nth-of-type(2n) td {
+  background-color: rgba(141, 204, 193, 0.1);
+}
+
+.brand {
+  font-size: 1em;
+  font-family: 'Droid Serif', serif;
+  text-decoration: none;
+  margin: 0;
+  font-style: italic;
+  font-weight: 700;
+}
+
+header {
+  position: fixed;
+  padding: 10px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid #1e1e1e;
+  transition: all .2s;
+  height: 45px;
+}
+
+header > .container {
+  height: 100%;
+}
+
+header.scrolled {
+  background-color: #060606;
+  border-bottom: 1px solid #060606;
+  color: #fff;
+  padding: 5px 0;
+  height: 35px;
+}
+
+header.scrolled h1 a, header.scrolled nav a:hover, header.scrolled nav a:focus {
+  color: #F6F8F7;
+}
+
+header h1 {
+  float: left;
+}
+
+header h1 a {
+  color: #060606;
+}
+
+header h1 a:hover, header h1 a:focus {
+  color: #E8175D;
+}
+
+header nav {
+  float: right;
+  font-size: .75em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-padding {
+  height: 45px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .car-tile {
   display: block;
-  text-align: center;
   text-decoration: none;
   height: 100%;
-  color: #F5F9F8;
+  color: #F6F8F7;
   background-color: #060606;
+  transition: all .3s;
 }
 
 .car-tile:after {
@@ -1088,24 +1212,72 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(6, 6, 6, 0.7);
+  background: rgba(6, 6, 6, 0.72);
+  background: linear-gradient(to top, rgba(6, 6, 6, 0.8) 0, rgba(6, 6, 6, 0.72) 15%, rgba(6, 6, 6, 0) 100%);
+  transition: all .3s;
   mix-blend-mode: multiply;
 }
 
-.car-tile h3 {
+.car-tile .tile-content {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  text-align: center;
-  top: 50%;
-  transform: translate(0, -50%);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding: 12px 95px 12px 15px;
   z-index: 20;
-  margin: 0;
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.car-tile .tile-content p {
+  margin: 0;
+}
+
+.car-tile .tile-content h3 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .car-tile .tile-content h3 {
+    font-size: 1em;
+  }
 }
 
 .car-tile img {
   width: 100%;
   display: block;
+}
+
+.car-tile .btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.car-tile:hover, .car-tile:focus {
+  color: #F6F8F7;
+}
+
+.car-tile:hover:after, .car-tile:focus:after {
+  opacity: .65;
+}
+
+.car-tile:hover .btn, .car-tile:focus .btn {
+  background-color: #F6F8F7;
+  border-color: #F6F8F7;
+  color: #060606;
+  transition: all .3s;
+}
+
+.headline-banner {
+  padding: 60px 0;
+}
+
+.headline-banner P {
+  margin: 0 0 5px;
 }
 
 .banner-image {
@@ -1126,7 +1298,7 @@ a {
   z-index: 10;
   position: relative;
   display: block;
-  color: rgba(245, 249, 248, 0.8);
+  color: rgba(246, 248, 247, 0.8);
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -1135,7 +1307,7 @@ a {
 }
 
 .image-reference:hover, .image-reference:focus {
-  color: #F5F9F8;
+  color: #F6F8F7;
 }
 
 blockquote {
@@ -1150,7 +1322,7 @@ blockquote {
 blockquote:before {
   content: "";
   font-size: 475px;
-  color: rgba(68, 68, 68, 0.1);
+  color: rgba(30, 30, 30, 0.1);
   position: absolute;
   background-image: url("/Assets/img/OpenQuote.svg");
   background-size: contain;
@@ -1163,16 +1335,60 @@ blockquote:before {
   opacity: .25;
 }
 
-blockquote .author {
+.author {
   font-size: .8em;
-  color: #444;
+  color: #1e1e1e;
   margin-top: 10px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
 }
 
-blockquote .author .publication {
+.author .publication {
   font-size: .8em;
   display: block;
   font-weight: 300;
+}
+
+footer {
+  padding: 10px 0;
+  background-color: #1e1e1e;
+  font-size: 18px;
+}
+
+footer .brand {
+  color: #F6F8F7;
+}
+
+footer nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+}
+
+footer nav a {
+  color: #cbcbcb;
+  display: block;
+}
+
+footer a:hover, footer a:focus {
+  color: #8dccc1;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: .75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border: 1px solid #F6F8F7;
+  transition: all .15s;
+}
+
+.right-arrow:after {
+  font-size: 1.32em;
+  content: '🡲';
+  font-style: normal;
+  display: inline-block;
 }
