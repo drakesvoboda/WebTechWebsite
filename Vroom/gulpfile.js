@@ -1,4 +1,5 @@
-﻿var gulp = require('gulp');
+/// <vs SolutionOpened='sass:watch' />
+var gulp = require('gulp');
 var merge = require('merge-stream');
 var concat = require('gulp-concat');
 
