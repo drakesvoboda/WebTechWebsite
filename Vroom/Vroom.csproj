@@ -77,25 +77,36 @@
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-900\Roboto-900.svg" />
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\LICENSE.txt" />
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\Roboto-regular.svg" />
+    <Content Include="Assets\img\325iBanner.jpg" />
+    <Content Include="Assets\img\BlackE30.jpg" />
+    <Content Include="Assets\img\BlackE30Thumb.jpg" />
     <Content Include="Assets\img\BlackSinger911.jpg" />
     <Content Include="Assets\img\BlueMustang.jpg" />
     <Content Include="Assets\img\blueprint.jpg" />
     <Content Include="Assets\img\BMW.jpg" />
+    <Content Include="Assets\img\E30GarageThumbnail.jpg" />
+    <Content Include="Assets\img\E30Rain.jpg" />
     <Content Include="Assets\img\FordMustang.jpg" />
     <Content Include="Assets\img\FordMustangThumbnail.jpg" />
     <Content Include="Assets\img\FrontRed.jpg" />
     <Content Include="Assets\img\GT40.jpg" />
     <Content Include="Assets\img\GT40Thumbnail.jpg" />
+    <Content Include="Assets\img\MustangTailLights.jpg" />
     <Content Include="Assets\img\OpenQuote.svg" />
     <Content Include="Assets\img\porsche.jpg" />
+    <Content Include="Assets\img\RedE30Thumb.jpg" />
+    <Content Include="Assets\img\RedMustang.jpg" />
     <Content Include="Assets\img\references.txt" />
     <Content Include="Assets\img\SingerInterior.jpg" />
     <Content Include="Assets\js\App.js" />
     <Content Include="Assets\_build\build.css" />
     <Content Include="Assets\_scss\_styles.scss" />
+    <Content Include="cars\BMWE30.aspx" />
     <Content Include="cars\CarDetail.aspx" />
     <Content Include="cars\Default.aspx" />
+    <Content Include="cars\Porsche911.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="cars\FordMustang.aspx" />
     <Content Include="package.json" />
     <Content Include="Assets\_scss\build.scss" />
     <Content Include="Assets\MasterPages\Site.Master" />
@@ -141,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gulpfile.js" />
+    <Content Include="Suggestions.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +170,13 @@
     <Compile Include="Assets\Controls\header.ascx.designer.cs">
       <DependentUpon>header.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cars\BMWE30.aspx.cs">
+      <DependentUpon>BMWE30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\BMWE30.aspx.designer.cs">
+      <DependentUpon>BMWE30.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cars\CarDetail.aspx.cs">
       <DependentUpon>CarDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,12 +191,26 @@
     <Compile Include="cars\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cars\Porsche911.aspx.cs">
+      <DependentUpon>Porsche911.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\Porsche911.aspx.designer.cs">
+      <DependentUpon>Porsche911.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cars\FordMustang.aspx.cs">
+      <DependentUpon>FordMustang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\FordMustang.aspx.designer.cs">
+      <DependentUpon>FordMustang.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\MasterPages\Site.Master.cs">
@@ -186,6 +219,13 @@
     </Compile>
     <Compile Include="Assets\MasterPages\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Suggestions.aspx.cs">
+      <DependentUpon>Suggestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suggestions.aspx.designer.cs">
+      <DependentUpon>Suggestions.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

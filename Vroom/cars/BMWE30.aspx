@@ -1,18 +1,18 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="CarDetail.aspx.cs" Inherits="Vroom.cars.CarDetail" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="BMWE30.aspx.cs" Inherits="Vroom.cars.BMWE30" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    
     <div class="header-padding"></div>
         <div class="container">
         <ul class="bread list-inline">
             <li><a href="/cars">Cars</a></li>
-            <li>Porsche 911</li>
+            <li>BMW E30</li>
         </ul>
     </div>
     <%-- Car Headline --%>
     <div class="headline-banner">
         <div class="container">
-            <h2>Porsche 911</h2>
+            <h2>BMW E30</h2>
             <p>"Sed ut perspiciatis unde omnis."</p>
             <p class="author">
                 John Doe
@@ -23,9 +23,9 @@
 
 
     <%-- Banner Image --%>
-    <a href="#" target="_blank" class="banner-image">
-        <img src="/Assets/img/BlackSinger911.jpg" />
-        <span class="image-reference">http://www.imagereference.com</span>
+    <a href="https://www.reddit.com/r/E30/comments/5pr1ha/my_325i_and_its_4_cylinder_twin/" target="_blank" class="banner-image">
+        <img src="/Assets/img/325iBanner.jpg" />
+        <span class="image-reference">https://www.reddit.com/r/E30/comments/5pr1ha/my_325i_and_its_4_cylinder_twin/</span>
     </a>
 
     <%-- Content Section --%>
@@ -83,17 +83,18 @@
     <%-- Two Column Image --%>
     <div class="row no-padding">
         <div class="col-sm-2">
-            <a href="#" target="_blank" class="banner-image">
-                <img src="/Assets/img/SingerInterior.jpg" />
-                <span class="image-reference">http://www.imagereference.com</span>
+            <a href="http://i.imgur.com/26DUqyB.jpg" target="_blank" class="banner-image">
+                <img src="/Assets/img/E30GarageThumbnail.jpg" />
+                <span class="image-reference">http://i.imgur.com/26DUqyB.jpg</span>
             </a>
         </div>
         <div class="col-sm-2">
-            <a href="#" target="_blank" class="banner-image">
-                <img src="../Assets/img/FrontRed.jpg" />
-                <span class="image-reference">http://www.imagereference.com</span>
+            <a href="http://i.imgur.com/nJuzLG8.jpg" target="_blank" class="banner-image">
+                <img src="/Assets/img/BlackE30Thumb.jpg" />
+                <span class="image-reference">http://i.imgur.com/nJuzLG8.jpg</span>
             </a>
         </div>
+        
     </div>
 
 

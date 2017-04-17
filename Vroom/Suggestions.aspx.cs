@@ -7,17 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace Vroom
 {
-    public partial class Site : System.Web.UI.MasterPage
+    public partial class Suggestions : System.Web.UI.Page
     {
-        public string pageTitle;
-        public bool suggestions = true;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Page.Title = "Vroom | Make A Suggestion";
         }
-
         protected void Page_PreRender(object sender, EventArgs e)
         {
+            ((Site)Page.Master).suggestions = false;
         }
+
     }
 }

@@ -12,10 +12,18 @@
     <link href="../_build/build.css" rel="stylesheet" />
 </head>
 <body>
-    <uc1:header runat="server" id="header" />
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      
-        </asp:ContentPlaceHolder>
-    <uc1:footer runat="server" id="footer" />
+    <uc1:header runat="server" ID="header" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%if (suggestions)
+      { %>
+    <section class="container suggest-banner">
+        <h4>Have a car in mind that we haven't included?&nbsp; &nbsp;<a href="/suggestions.aspx">Make a Suggestion</a></h4>
+    </section>
+    <%} %>
+
+    <uc1:footer runat="server" ID="footer" />
     <script src="/assets/js/App.js"></script>
 
 </body>

@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="CarDetail.aspx.cs" Inherits="Vroom.cars.CarDetail" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="Porsche911.aspx.cs" Inherits="Vroom.cars.Porsche911" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
     <div class="header-padding"></div>
-        <div class="container">
+    <div class="container">
         <ul class="bread list-inline">
             <li><a href="/cars">Cars</a></li>
             <li>Porsche 911</li>
@@ -13,34 +14,32 @@
     <div class="headline-banner">
         <div class="container">
             <h2>Porsche 911</h2>
-            <p>"Sed ut perspiciatis unde omnis."</p>
+            <p>"Good design should be honest."</p>
             <p class="author">
-                John Doe
-                <span class="publication">Writer for Publication</span>
+                Ferdinand Alexander Porsche
+                <span class="publication">Designer of the Porsche 911</span>
             </p>
         </div>
     </div>
 
 
     <%-- Banner Image --%>
-    <a href="#" target="_blank" class="banner-image">
+    <a href="http://i.imgur.com/31ELSow.jpg" target="_blank" class="banner-image">
         <img src="/Assets/img/BlackSinger911.jpg" />
-        <span class="image-reference">http://www.imagereference.com</span>
+        <span class="image-reference">http://i.imgur.com/31ELSow.jpg</span>
     </a>
 
     <%-- Content Section --%>
     <main>
         <div class="banner">
             <div class="container">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                   tempor incididunt ut labore et dolore magna aliqua.
+                <h3>
+                    The Porsche 911 has consistently increased performace for the past five decades, in the same age old design.
                 </h3>
                 <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
-                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    Not much has changed about the Porsche 911 over the past half century, except for the performance. The engineers at Porsche have consistently pushed
+                    the bounderies and provided excellent performance in an age old design. The Porsche 911 is one of the most elegently beautiful cars to ever be produced,
+                    and it has the performance to back it up.  
                 </p>
                 <br />
                 <div class="responsive-table">
@@ -54,24 +53,24 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1969</td>
-                                <td>160 hp</td>
-                                <td>650 fp</td>
+                                <td>1964</td>
+                                <td>148 hp</td>
+                                <td>140 lb-ft</td>
                             </tr>
                             <tr>
-                                <td>1969</td>
-                                <td>160 hp</td>
-                                <td>650 fp</td>
+                                <td>1989–90</td>
+                                <td>247 hp</td>
+                                <td>228 lb-ft</td>
                             </tr>
                             <tr>
-                                <td>1969</td>
-                                <td>160 hp</td>
-                                <td>650 fp</td>
+                                <td>1996</td>
+                                <td>282 hp</td>
+                                <td>250 lb-ft</td>
                             </tr>
                             <tr>
-                                <td>1969</td>
-                                <td>160 hp</td>
-                                <td>650 fp</td>
+                                <td>2012</td>
+                                <td>400 hp</td>
+                                <td>325 lb-ft</td>
                             </tr>
                         </tbody>
                     </table>
@@ -83,15 +82,15 @@
     <%-- Two Column Image --%>
     <div class="row no-padding">
         <div class="col-sm-2">
-            <a href="#" target="_blank" class="banner-image">
+            <a href="https://i.imgur.com/k9FBc9I.jpg" target="_blank" class="banner-image">
                 <img src="/Assets/img/SingerInterior.jpg" />
-                <span class="image-reference">http://www.imagereference.com</span>
+                <span class="image-reference">https://i.imgur.com/k9FBc9I.jpg</span>
             </a>
         </div>
         <div class="col-sm-2">
-            <a href="#" target="_blank" class="banner-image">
+            <a href="http://i.imgur.com/3x91Odt.jpg" target="_blank" class="banner-image">
                 <img src="../Assets/img/FrontRed.jpg" />
-                <span class="image-reference">http://www.imagereference.com</span>
+                <span class="image-reference">http://i.imgur.com/3x91Odt.jpg</span>
             </a>
         </div>
     </div>
@@ -100,20 +99,18 @@
     <%-- Block Quote --%>
     <section class="quote-banner">
         <div class="container">
-            <blockquote cite="/">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                commodo consequat.
+            <blockquote>
+                As creator of the Porsche 911, [Ferdinand Alexander Porsche] established a design culture that still molds our sports cars today. 
+                His philosophy of good design is a legacy that we will continue to honor in the future.
              <p class="author">
-                 John Doe
-                <span class="publication">Writer for Publication</span>
+                 Matthias Müller
+                <span class="publication">Chief Executive Officer of Volkswagen Group</span>
              </p>
             </blockquote>
         </div>
     </section>
 
-           <%-- Related Cars Callout --%>
+    <%-- Related Cars Callout --%>
     <section class="related-cars">
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
@@ -151,8 +148,7 @@
                 </a>
             </div>
         </div>
-        
-    </section>
 
+    </section>
 
 </asp:Content>

@@ -1,3 +1,4 @@
+/// <vs SolutionOpened='sass:watch' />
 'use strict';
 
 var gulp = require('gulp');
