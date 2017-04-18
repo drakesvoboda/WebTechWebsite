@@ -25,7 +25,7 @@
 
     <%-- Banner Image --%>
     <a href="http://i.imgur.com/8AJtGtO.jpg" target="_blank" class="banner-image">
-        <img src="/Assets/img/BlueMustang.jpg" />
+        <img src="/Assets/img/BlueMustang.jpg" alt="The passenger side of a blue Ford Mustang parked on the street in a valley" />
         <span class="image-reference">http://i.imgur.com/8AJtGtO.jpg</span>
     </a>
 
@@ -50,13 +50,13 @@
     <div class="row no-padding">
         <div class="col-sm-2">
             <a href="https://i.redd.it/zbkn4up3irpy.jpg" target="_blank" class="banner-image">
-                <img src="/Assets/img/MustangTailLights.jpg" />
+                <img src="/Assets/img/MustangTailLights.jpg" alt="The red brake light of a Ford Mustang" />
                 <span class="image-reference">https://i.redd.it/zbkn4up3irpy.jpg</span>
             </a>
         </div>
         <div class="col-sm-2">
             <a href="https://i.redd.it/h5hymd0b8gsx.jpg" target="_blank" class="banner-image">
-               <img src="/Assets/img/RedMustang.jpg" />
+                <img src="/Assets/img/RedMustang.jpg" alt="The front of a red Ford Mustang with two white racing stripes" />
                 <span class="image-reference">https://i.redd.it/h5hymd0b8gsx.jpg</span>
             </a>
         </div>
@@ -72,11 +72,15 @@
                 a record 22,000 on the first day alone! Within two years, it sold 1,000,000. This “Pony Car” created a 
                 sleek best-selling class of vehicle that made the competition take notice, spurring vehicles like the 
                 Camaro and Firebird in response.
-             <p class="author">
-                 Douglas Sonders
-                <span class="publication">Writer for Complex</span>
-             </p>
+                <div>
+                    <p class="author">
+                        Douglas Sonders
+                        <span class="publication">Writer for Complex</span>
+                    </p>
+                    <a href="http://www.complex.com/sports/2014/04/douglas-sonders-remembers-ford-mustang-impact" target="_blank">Read the Full Article</a>
+                </div>
             </blockquote>
+
         </div>
     </section>
 
@@ -85,36 +89,36 @@
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/BMW.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>BMW E30</h3>
+                <a href="/cars/BMWE30.aspx" class="car-tile">
+                    <img src="/Assets/img/BMW.jpg" alt="BMW E30" />
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">BMW E30</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>Porsche 911</h3>
+                <a href="/cars/Porsche911.aspx" class="car-tile">
+                    <img src="/Assets/img/porsche.jpg" alt="Porsche 911" />
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Porsche 911</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>More</h3>
+                    <img src="/Assets/img/blueprint.jpg" alt="" />
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">More</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
         </div>

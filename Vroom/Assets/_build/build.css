@@ -1062,6 +1062,7 @@ body {
   background-color: #F6F8F7;
   color: #060606;
   font-weight: 400;
+  line-height: 1.5;
   font-family: 'Droid Serif', serif;
 }
 
@@ -1082,6 +1083,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th, label {
 
 h2, .h2 {
   margin-top: 0;
+  margin-bottom: .6em;
 }
 
 h3, .h3 {
@@ -1104,6 +1106,10 @@ a {
 
 a:hover, a:focus {
   color: #060606;
+}
+
+ul {
+  padding-left: 25px;
 }
 
 .primary-bg {
@@ -1313,6 +1319,7 @@ header nav {
 
 .hero-banner {
   min-height: 250px;
+  line-height: 1.2;
   padding: 75px 0 30px;
 }
 
@@ -1336,6 +1343,7 @@ header nav {
 
 .headline-banner {
   padding: 5px 0 30px;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -1408,7 +1416,7 @@ header nav {
 blockquote {
   margin: 0;
   padding-left: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   border-left: 6px solid #E8175D;
   letter-spacing: .5px;
   position: relative;
@@ -1430,10 +1438,27 @@ blockquote:before {
   opacity: .25;
 }
 
+blockquote div {
+  overflow: hidden;
+}
+
+blockquote div > .author {
+  float: left;
+}
+
+blockquote a {
+  float: right;
+  display: block;
+  font-size: .8em;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
 .author {
   font-size: .8em;
   color: #1e1e1e;
   margin-top: 10px;
+  margin-bottom: 0;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
 }
@@ -1448,7 +1473,7 @@ blockquote:before {
   font-family: 'Roboto', sans-serif;
   font-size: .8em;
   color: rgba(6, 6, 6, 0.8);
-  margin: 8px 0 0;
+  margin: 12px 0 0;
 }
 
 .bread li {
@@ -1476,6 +1501,8 @@ footer {
 
 footer .brand {
   color: #F6F8F7;
+  display: block;
+  text-align: center;
 }
 
 footer nav {

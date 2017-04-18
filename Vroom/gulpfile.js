@@ -13,15 +13,20 @@ var plugin = require("gulp-load-plugins")({
 var pack = require('./package.json');
 
 gulp.task('sass', function () {
-    var sassStream = gulp.src('./Assets/_scss/*.scss')
+    var sassStream = gulp.src('./Assets/_scss/build.scss')
         .pipe(plugin.sass({ outputStyle: 'expanded', includePaths: ['./node_modules/breakpoint-sass/styleheets'] }).on('error', plugin.sass.logError))
 	    .pipe(concat('scss-files.scss'));
 
-    var fontsStream = gulp.src('./Assets/fonts/**/css/*.css').pipe(concat('font-files'));
+    var fontsStream = gulp.src('./Assets/fonts/**/css/*.css').pipe(concat('font-files'));   
 
     var merged = merge(fontsStream, sassStream)
         .pipe(concat('build.css'))
         .pipe(gulp.dest('./Assets/_build'));
+
+    gulp.src('./Assets/_scss/print.scss')
+        .pipe(plugin.sass({ outputStyle: 'expanded' }).on('error', plugin.sass.logError))
+        .pipe(concat('print.css'))
+	    .pipe(gulp.dest('./Assets/_build'));
 
     return merged;
 

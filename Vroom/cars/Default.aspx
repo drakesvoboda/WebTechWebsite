@@ -10,74 +10,74 @@
     </section>
 
     <main>
-    <div class="row flex-row no-padding">
-        <div class="col-lg-3 col-md-2 col-1">
-            <a href="/cars/BMWE30.aspx" class="car-tile">
-                <img src="/Assets/img/BMW.jpg" />
-                <div class="tile-content">
-                    <div>
-                        <h3>BMW E30</h3>
-                        <span class="btn"><i class="right-arrow"></i></span>
-                    </div>
-                </div>
-            </a>
+        <div class="row flex-row no-padding">
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/BMWE30.aspx" class="car-tile">
+                    <img src="/Assets/img/BMW.jpg" alt="BMW E30"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">BMW E30</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/Porsche911.aspx" class="car-tile">
+                    <img src="/Assets/img/porsche.jpg" alt="Porsche 911"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Porsche 911</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/FordMustang.aspx" class="car-tile">
+                    <img src="/Assets/img/FordMustangThumbnail.jpg" alt="Ford Mustang"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Ford Mustang</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/FordGT40.aspx" class="car-tile">
+                    <img src="/Assets/img/GT40Thumbnail.jpg" alt="Ford GT40"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Ford GT</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/JaguarE-Type.aspx" class="car-tile">
+                    <img src="/Assets/img/EType.jpg" alt="Jaguar E-Type"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Jaguar e-Type</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
+                    <img src="/Assets/img/porsche.jpg" alt="Lamborghini Miura"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Lamborghini Miura</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
         </div>
-        <div class="col-lg-3 col-md-2 col-1">
-            <a href="/cars/Porsche911.aspx" class="car-tile">
-                <img src="/Assets/img/porsche.jpg" />
-                <div class="tile-content">
-                    <div>
-                        <h3>Porsche 911</h3>
-                        <span class="btn"><i class="right-arrow"></i></span>
-                    </div>
-                </div>
-            </a>
-        </div>
-       
-        <div class="col-lg-3 col-md-2 col-1">
-            <a href="/cars/FordMustang.aspx" class="car-tile">
-                <img src="/Assets/img/FordMustangThumbnail.jpg" />
-                <div class="tile-content">
-                    <div>
-                        <h3>Ford Mustang</h3>
-                        <span class="btn"><i class="right-arrow"></i></span>
-                    </div>
-                </div>
-            </a>
-        </div>
-         <div class="col-lg-3 col-md-2 col-1">
-            <a href="/cars/cardetail.aspx" class="car-tile">
-                <img src="/Assets/img/GT40Thumbnail.jpg" />
-                <div class="tile-content">
-                    <div>
-                        <h3>Ford GT40</h3>
-                        <span class="btn"><i class="right-arrow"></i></span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-2 col-1">
-            <a href="/cars/cardetail.aspx" class="car-tile">
-                <img src="/Assets/img/BMW.jpg" />
-                <div class="tile-content">
-                    <div>
-                        <h3>Jaguar e-Type</h3>
-                        <span class="btn"><i class="right-arrow"></i></span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-2 col-1">
-            <a href="/cars/cardetail.aspx" class="car-tile">
-                <img src="/Assets/img/porsche.jpg" />
-                <div class="tile-content">
-                    <div>
-                        <h3>Lamborghini Miura</h3>
-                        <span class="btn"><i class="right-arrow"></i></span>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-        </main>
+    </main>
 </asp:Content>

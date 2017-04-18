@@ -25,7 +25,7 @@
 
     <%-- Banner Image --%>
     <a href="http://i.imgur.com/31ELSow.jpg" target="_blank" class="banner-image">
-        <img src="/Assets/img/BlackSinger911.jpg" />
+        <img src="/Assets/img/BlackSinger911.jpg" alt="A Black Singer Porsche 911 parked in the mountains"/>
         <span class="image-reference">http://i.imgur.com/31ELSow.jpg</span>
     </a>
 
@@ -83,13 +83,13 @@
     <div class="row no-padding">
         <div class="col-sm-2">
             <a href="https://i.imgur.com/k9FBc9I.jpg" target="_blank" class="banner-image">
-                <img src="/Assets/img/SingerInterior.jpg" />
+                <img src="/Assets/img/SingerInterior.jpg" alt="The brown interior of an old Porsche 911"/>
                 <span class="image-reference">https://i.imgur.com/k9FBc9I.jpg</span>
             </a>
         </div>
         <div class="col-sm-2">
             <a href="http://i.imgur.com/3x91Odt.jpg" target="_blank" class="banner-image">
-                <img src="../Assets/img/FrontRed.jpg" />
+                <img src="../Assets/img/FrontRed.jpg" alt="The front of a red Porsche 911 parked in front of a sunset"/>
                 <span class="image-reference">http://i.imgur.com/3x91Odt.jpg</span>
             </a>
         </div>

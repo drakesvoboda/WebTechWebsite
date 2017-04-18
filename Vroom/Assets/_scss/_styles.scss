@@ -25,6 +25,7 @@ body {
     background-color: $white;
     color: $grey;
     font-weight: 400;
+    line-height: 1.5;
     @include bodyFont();
 
     @include breakpoint($bp-m) {
@@ -43,6 +44,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th, label {
 
 h2, .h2 {
     margin-top: 0;
+    margin-bottom: .6em;
 }
 
 h3, .h3 {
@@ -65,6 +67,10 @@ a {
     &:hover, &:focus {
         color: $grey;
     }
+}
+
+ul {
+    padding-left: 25px;
 }
 
 .primary-bg {
@@ -271,6 +277,7 @@ header {
 
 .hero-banner {
     min-height: 250px;
+    line-height: 1.2;
     padding: ($header-height + $banner-padding-mobile) 0 $banner-padding-mobile;
 
     @include breakpoint($bp-m) {
@@ -290,6 +297,7 @@ header {
 
 .headline-banner {
     padding: ($banner-padding-mobile - 25px) 0 $banner-padding-mobile;
+    line-height: 1.2;
 
     @include breakpoint($bp-m) {
         padding: ($banner-padding-tablet - 25px) 0 $banner-padding-tablet;
@@ -356,7 +364,7 @@ header {
 blockquote {
     margin: 0;
     padding-left: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
     border-left: 6px solid $accent-color;
     letter-spacing: .5px;
     position: relative;
@@ -376,12 +384,29 @@ blockquote {
         height: 180px;
         opacity: .25;
     }
+
+    div {
+        overflow: hidden;
+
+        > .author {
+            float: left;
+        }
+    }
+
+    a {
+        float: right;
+        display: block;
+        font-size: .8em;
+        font-weight: 300;
+        @include headingFont();
+    }
 }
 
 .author {
     font-size: .8em;
     color: $lt-grey;
     margin-top: 10px;
+    margin-bottom: 0;
     font-weight: 300;
     @include headingFont();
 
@@ -396,7 +421,7 @@ blockquote {
     @include headingFont();
     font-size: .8em;
     color: rgba($grey, .8);
-    margin: 8px 0 0;
+    margin: 12px 0 0;
 
     li {
         padding-left: 0;
@@ -423,6 +448,8 @@ footer {
 
     .brand {
         color: $white;
+        display: block;
+        text-align:center;
     }
 
     nav {

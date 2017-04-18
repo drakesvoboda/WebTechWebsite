@@ -1,0 +1,82 @@
+﻿
+body {
+    margin: 0;
+    font-size: 18px;
+    background-color: transparent;
+    color: #000;
+}
+
+header {
+    position: relative;
+}
+
+.header-padding {
+    display: none;
+}
+
+table {
+    page-break-inside: auto;
+
+    td, th {
+        background-color: transparent !important;
+        border: 1px solid #000;
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+}
+
+.related-cars, .suggest-banner {
+    display: none;
+}
+
+header, footer {
+    background-color: transparent !important;
+    color: #000 !important;
+
+    .brand, nav a, a {
+        color: #000 !important;
+    }
+}
+
+blockquote:before {
+    content: normal;
+}
+
+.car-tile {
+    height: auto;
+    background-color: transparent;
+
+    .tile-content {
+        position: relative;
+        display: block;
+        color: #000;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    &:after {
+        content: normal;
+        display: none;
+    }
+}
+
+.flex {
+    &-row, &-column, &-center {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}
+
+[class*=col] {
+    float: none;
+    width: auto;
+    height: auto;
+}

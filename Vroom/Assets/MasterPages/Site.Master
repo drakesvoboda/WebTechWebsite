@@ -10,6 +10,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../_build/build.css" rel="stylesheet" />
+    <link href="../_build/print.css" rel="stylesheet" media="print"/>
 </head>
 <body>
     <uc1:header runat="server" ID="header" />

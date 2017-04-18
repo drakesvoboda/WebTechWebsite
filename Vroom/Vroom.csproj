@@ -86,24 +86,37 @@
     <Content Include="Assets\img\BMW.jpg" />
     <Content Include="Assets\img\E30GarageThumbnail.jpg" />
     <Content Include="Assets\img\E30Rain.jpg" />
+    <Content Include="Assets\img\EType.jpg" />
+    <Content Include="Assets\img\ETypeInteriorThumb.jpg" />
+    <Content Include="Assets\img\ETypeSideThumb.jpg" />
     <Content Include="Assets\img\FordMustang.jpg" />
     <Content Include="Assets\img\FordMustangThumbnail.jpg" />
     <Content Include="Assets\img\FrontRed.jpg" />
     <Content Include="Assets\img\GT40.jpg" />
+    <Content Include="Assets\img\Gt40OnTrackThumb.jpg" />
+    <Content Include="Assets\img\GT40ParkedOnStreetBanner.jpg" />
+    <Content Include="Assets\img\GT40ParkedOnStreetThumb.jpg" />
     <Content Include="Assets\img\GT40Thumbnail.jpg" />
+    <Content Include="Assets\img\GulfGT40.jpg" />
     <Content Include="Assets\img\MustangTailLights.jpg" />
     <Content Include="Assets\img\OpenQuote.svg" />
     <Content Include="Assets\img\porsche.jpg" />
+    <Content Include="Assets\img\RedE-TypeCityBanner.jpg" />
     <Content Include="Assets\img\RedE30Thumb.jpg" />
+    <Content Include="Assets\img\RedGT40Banner.jpg" />
     <Content Include="Assets\img\RedMustang.jpg" />
     <Content Include="Assets\img\references.txt" />
     <Content Include="Assets\img\SingerInterior.jpg" />
+    <Content Include="Assets\img\WhiteE-TypeThumb.jpg" />
     <Content Include="Assets\js\App.js" />
     <Content Include="Assets\_build\build.css" />
+    <Content Include="Assets\_build\print.css" />
     <Content Include="Assets\_scss\_styles.scss" />
     <Content Include="cars\BMWE30.aspx" />
     <Content Include="cars\CarDetail.aspx" />
     <Content Include="cars\Default.aspx" />
+    <Content Include="cars\FordGT40.aspx" />
+    <Content Include="cars\JaguarE-Type.aspx" />
     <Content Include="cars\Porsche911.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="cars\FordMustang.aspx" />
@@ -143,6 +156,8 @@
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\Roboto-regular.ttf" />
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\Roboto-regular.woff" />
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\Roboto-regular.woff2" />
+    <Content Include="Assets\_scss\print.scss" />
+    <Content Include="Assets\_scss\_printPartial.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -190,6 +205,20 @@
     </Compile>
     <Compile Include="cars\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cars\FordGT40.aspx.cs">
+      <DependentUpon>FordGT40.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\FordGT40.aspx.designer.cs">
+      <DependentUpon>FordGT40.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cars\JaguarE-Type.aspx.cs">
+      <DependentUpon>JaguarE-Type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\JaguarE-Type.aspx.designer.cs">
+      <DependentUpon>JaguarE-Type.aspx</DependentUpon>
     </Compile>
     <Compile Include="cars\Porsche911.aspx.cs">
       <DependentUpon>Porsche911.aspx</DependentUpon>
