@@ -12,11 +12,11 @@ $banner-padding-tablet: 60px;
 $banner-padding-mobile: 30px;
 
 @mixin bodyFont() {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Droid Serif', 'Times New Roman', Times, serif ;
 }
 
 @mixin headingFont() {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -79,7 +79,7 @@ ul {
     margin: 0 -3px;
     padding: 0;
 
-    li {
+    > li {
         display: inline-block;
         padding-right: 3px;
         padding-left: 3px;
@@ -176,6 +176,69 @@ header {
         float: right;
         font-size: .75em;
         @include headingFont();
+
+        li {
+            position: relative;
+        }
+    }
+}
+
+#dropdown-menu {
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    top: 45px;
+    min-width: 166px;
+    margin-left: -83px;
+    background-color: $lt-grey;
+    box-shadow: 0 0 10px rgba($lt-grey, .25);
+    transition: all .15s;
+    display: none;
+
+    &.active {
+        display: block;
+        animation: dropdownOpen .4s cubic-bezier(.07,.99,.49,.99) forwards;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $lt-grey;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -10px;
+    }
+
+    li {
+        display: block;
+
+        a {
+            display: block;
+            padding: 10px 15px;
+            border-bottom: 1px solid #444;
+            color: #fff;
+
+            &:hover, &:focus, &.active {
+                background-color: $accent-color;
+            }
+        }
+    }
+}
+
+
+@keyframes dropdownOpen {
+    0% {
+        opacity: 0;
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
@@ -280,7 +343,7 @@ header {
     line-height: 1.2;
     font-size: 1.2em;
     background: rgba(15, 15, 25, .3);
-    position:relative;
+    position: relative;
     color: #fff;
     text-shadow: 0 0 6px rgba(0, 0, 0, .8);
     padding: $banner-padding-mobile 0;
@@ -295,8 +358,8 @@ header {
         padding: $banner-padding 0;
     }
 
-    :after{
-        position:absolute;
+    :after {
+        position: absolute;
         content: '';
         top: 0;
         left: 0;
@@ -305,7 +368,7 @@ header {
         background-image: url('../img/AnimatedBanner.gif');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position:center bottom;
+        background-position: center bottom;
         z-index: -1;
     }
 
@@ -526,11 +589,22 @@ footer {
         }
     }
 
-
     .developer-link {
         font-size: .8em;
         text-align: center;
         font-weight: 300;
+    }
+
+    @include breakpoint($bp-m) {
+        .footer-row {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            clear: both;
+            align-items: center;
+            height: 100%;
+        }
     }
 }
 

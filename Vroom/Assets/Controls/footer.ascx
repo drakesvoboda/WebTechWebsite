@@ -5,7 +5,7 @@
 
 <footer>
     <div class="container">
-        <div class="flex-center">
+        <div class="footer-row">
             <a class="brand" href="/" title="Vroom.com | Homepage">Vroom</a>
             
             <nav class="flex-1">
@@ -15,7 +15,7 @@
                     <li><a href="/cars">The Cars</a></li>                  
                 </ul>
             </nav>
-            <div class="developer-link ">Like the website?&nbsp; &nbsp;<a target="_blank" href="mailto:drakesvoboda@gmail.com">Email The Developer</a></div>
+            <div class="developer-link"><a target="_blank" href="mailto:drakesvoboda@gmail.com">Email The Developer</a></div>
         </div>
     </div>
      

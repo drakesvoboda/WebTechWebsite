@@ -1067,7 +1067,7 @@ body {
   color: #060606;
   font-weight: 400;
   line-height: 1.5;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Droid Serif', 'Times New Roman', Times, serif;
 }
 
 @media (min-width: 768px) {
@@ -1077,7 +1077,7 @@ body {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th, label {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
 
@@ -1122,7 +1122,7 @@ ul {
   padding: 0;
 }
 
-.list-inline li {
+.list-inline > li {
   display: inline-block;
   padding-right: 3px;
   padding-left: 3px;
@@ -1168,7 +1168,7 @@ table tr:nth-of-type(2n) td {
 
 .brand {
   font-size: 1em;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Droid Serif', 'Times New Roman', Times, serif;
   text-decoration: none;
   margin: 0;
   font-style: italic;
@@ -1218,7 +1218,68 @@ header h1 a:hover, header h1 a:focus {
 header nav {
   float: right;
   font-size: .75em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header nav li {
+  position: relative;
+}
+
+#dropdown-menu {
+  position: absolute;
+  padding: 0;
+  left: 50%;
+  top: 45px;
+  min-width: 166px;
+  margin-left: -83px;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(30, 30, 30, 0.25);
+  transition: all .15s;
+  display: none;
+}
+
+#dropdown-menu.active {
+  display: block;
+  animation: dropdownOpen 0.4s cubic-bezier(0.07, 0.99, 0.49, 0.99) forwards;
+}
+
+#dropdown-menu:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #1e1e1e;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+#dropdown-menu li {
+  display: block;
+}
+
+#dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #444;
+  color: #fff;
+}
+
+#dropdown-menu li a:hover, #dropdown-menu li a:focus, #dropdown-menu li a.active {
+  background-color: #E8175D;
+}
+
+@keyframes dropdownOpen {
+  0% {
+    opacity: 0;
+    transform: translate(0, 15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .header-padding {
@@ -1404,7 +1465,7 @@ header nav {
   transition: all .15s;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: .6em;
   position: absolute;
@@ -1481,7 +1542,7 @@ blockquote a {
   display: block;
   font-size: .8em;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .author {
@@ -1490,7 +1551,7 @@ blockquote a {
   margin-top: 10px;
   margin-bottom: 0;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .author .publication {
@@ -1500,7 +1561,7 @@ blockquote a {
 }
 
 .bread {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: .8em;
   color: rgba(6, 6, 6, 0.8);
   margin: 12px 0 0;
@@ -1552,7 +1613,7 @@ footer {
   background-color: #1e1e1e;
   font-size: 18px;
   margin-top: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: #cbcbcb;
 }
 
@@ -1591,9 +1652,21 @@ footer .developer-link {
   font-weight: 300;
 }
 
+@media (min-width: 768px) {
+  footer .footer-row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    clear: both;
+    align-items: center;
+    height: 100%;
+  }
+}
+
 .btn {
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: .75em;
   font-weight: 800;
   line-height: 1.6;
@@ -1695,7 +1768,7 @@ footer .developer-link {
   padding: 10px;
   transition: all .15s;
   outline: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .input-group input:hover, .input-group textarea:hover {
