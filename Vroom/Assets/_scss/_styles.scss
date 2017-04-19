@@ -155,8 +155,12 @@ header {
         padding: 5px 0;
         height: $header-height - 10px;
 
-        h1 a, nav a:hover, nav a:focus {
+        h1 a, nav a, nav a {
             color: $white;
+
+            &:hover, &:focus{
+                color: $accent-color;
+            }
         }
     }
 

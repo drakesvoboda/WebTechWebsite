@@ -1199,8 +1199,12 @@ header.scrolled {
   height: 35px;
 }
 
-header.scrolled h1 a, header.scrolled nav a:hover, header.scrolled nav a:focus {
+header.scrolled h1 a, header.scrolled nav a, header.scrolled nav a {
   color: #F6F8F7;
+}
+
+header.scrolled h1 a:hover, header.scrolled h1 a:focus, header.scrolled nav a:hover, header.scrolled nav a:focus, header.scrolled nav a:hover, header.scrolled nav a:focus {
+  color: #E8175D;
 }
 
 header h1 {
