@@ -16,10 +16,6 @@ html {
 }
 
 body {
-    display: flex;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
     clear: both;
     height: 100%;
 }
@@ -27,6 +23,10 @@ body {
 body, html {
     min-width: 375px;
     min-height: 100vh;
+}
+
+main{
+    display: block;
 }
 
 * {
@@ -196,6 +196,10 @@ body, html {
 
     &-center {
         display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        clear: both;
         align-items: center;
         height: 100%;
     }

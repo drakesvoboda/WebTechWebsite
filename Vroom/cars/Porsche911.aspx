@@ -115,25 +115,25 @@
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/BMW.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>BMW E30</h3>
+                <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
+                    <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Lamborghini Miura</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>Porsche 911</h3>
+                <a href="/cars/JaguarE-Type.aspx" class="car-tile">
+                    <img src="/Assets/img/EType.jpg" alt="Jaguar E-Type"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Jaguar e-Type</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">

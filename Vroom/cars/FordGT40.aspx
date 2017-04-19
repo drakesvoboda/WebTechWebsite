@@ -23,9 +23,9 @@
 
 
     <%-- Banner Image --%>
-    <a href="#" target="_blank" class="banner-image">
+    <a href="https://i.redd.it/ajtr5hr36xox.png" target="_blank" class="banner-image">
         <img src="../Assets/img/RedGT40Banner.jpg" alt="Red Ford GT40, numbered 42, parked on a street in through the woods" />
-        <span class="image-reference">http://www.imagereference.com</span>
+        <span class="image-reference">https://i.redd.it/ajtr5hr36xox.png</span>
     </a>
 
     <%-- Content Section --%>
@@ -51,15 +51,15 @@
 
 
         <div class="col-sm-2">
-            <a href="#" target="_blank" class="banner-image">
+            <a href="http://i.imgur.com/uneir6b.jpg" target="_blank" class="banner-image">
                 <img src="../Assets/img/Gt40OnTrackThumb.jpg" alt="Arial photograph of a grey Ford GT driving on a racetrack"/>
-                <span class="image-reference">http://www.imagereference.com</span>
+                <span class="image-reference">http://i.imgur.com/uneir6b.jpg</span>
             </a>
         </div>
         <div class="col-sm-2">
-            <a href="#" target="_blank" class="banner-image">
+            <a href="https://i.redd.it/6ix8detw30rx.jpg" target="_blank" class="banner-image">
                 <img src="../Assets/img/GT40ParkedOnStreetThumb.jpg" alt="A red Ford GT parked on the street"/>
-                <span class="image-reference">http://www.imagereference.com</span>
+                <span class="image-reference">https://i.redd.it/6ix8detw30rx.jpg</span>
             </a>
         </div>
     </div>
@@ -93,25 +93,25 @@
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/BMW.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>BMW E30</h3>
+               <a href="/cars/FordMustang.aspx" class="car-tile">
+                    <img src="/Assets/img/FordMustangThumbnail.jpg" alt="Ford Mustang"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Ford Mustang</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>Porsche 911</h3>
+                <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
+                    <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Lamborghini Miura</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">

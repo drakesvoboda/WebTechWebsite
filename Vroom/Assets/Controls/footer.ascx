@@ -10,7 +10,7 @@
             
             <nav class="flex-1">
                 <ul class="list-inline">
-                    <li><a href="#">Site Map</a></li>
+                    <li><a href="/sitemap.aspx">Site Map</a></li>
                     <li>|</li>
                     <li><a href="/cars">The Cars</a></li>                  
                 </ul>

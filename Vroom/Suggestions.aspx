@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="header-padding"></div>
-    <main class="headline-banner">
+    <main class="banner">
         <div class="container">
             <h2>Do you have a car in mind that we haven't included?</h2>
             <p>Fill out the form below to make a suggestion.</p>

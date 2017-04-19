@@ -33,10 +33,6 @@ body {
     }
 }
 
-main {
-    flex: 1;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th, label {
     @include headingFont();
     font-weight: 700;
@@ -188,8 +184,12 @@ header {
 }
 
 .content-block {
-    padding: 30px;
+    padding: 15px;
     border: 1px solid $lt-grey;
+
+    @include breakpoint($bp-m) {
+        padding: 30px;
+    }
 
     h4 {
         margin-top: 0;
@@ -276,22 +276,46 @@ header {
 }
 
 .hero-banner {
-    min-height: 250px;
+    height: 250px;
     line-height: 1.2;
-    padding: ($header-height + $banner-padding-mobile) 0 $banner-padding-mobile;
+    font-size: 1.2em;
+    background: rgba(15, 15, 25, .3);
+    position:relative;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    padding: $banner-padding-mobile 0;
 
     @include breakpoint($bp-m) {
-        min-height: 400px;
+        height: 420px;
         padding: $banner-padding-tablet 0;
     }
 
     @include breakpoint($bp-l) {
-        min-height: 450px;
+        height: 475px;
         padding: $banner-padding 0;
+    }
+
+    :after{
+        position:absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../img/AnimatedBanner.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center bottom;
+        z-index: -1;
     }
 
     P {
         margin: 0;
+        max-width: 650px;
+    }
+
+    h2 {
+        max-width: 500px;
     }
 }
 
@@ -438,6 +462,33 @@ blockquote {
     }
 }
 
+#sitemap {
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+
+    > li > a {
+        font-weight: 700;
+    }
+
+    a:visited {
+        color: #666;
+
+        &:hover, &:focus {
+            color: $grey;
+        }
+    }
+
+    li {
+        padding: 2px;
+
+        a {
+            display: block;
+            padding: 2px 0;
+        }
+    }
+}
+
 footer {
     padding: 10px 0;
     background-color: $lt-grey;
@@ -449,7 +500,7 @@ footer {
     .brand {
         color: $white;
         display: block;
-        text-align:center;
+        text-align: center;
     }
 
     nav {
@@ -498,8 +549,9 @@ footer {
     cursor: pointer;
 
     .btn-arrow {
-        font-size: 1em;
+        width: 48px;
         padding: 12px 15px 10px;
+        height: calc(100% + 2px);
         display: inline-block;
         position: absolute;
         top: -1px;
@@ -508,7 +560,13 @@ footer {
         border: 1px solid $white;
 
         &:after {
-            content: '🡲';
+            content: '»';
+            display: inline-block;
+            font-size: 2.25em;
+            line-height: 0;
+            position: absolute;
+            top: calc(50% - 2px);
+            left: calc(50% - 8px);
         }
     }
 
@@ -601,8 +659,10 @@ footer {
 }
 
 .right-arrow:after {
-    font-size: 1.32em;
-    content: '🡲';
+    font-size: 2.25em;
+    line-height: .6;
+    content: '»';
     font-style: normal;
     display: inline-block;
+    margin-left: 2px;
 }

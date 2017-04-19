@@ -11,13 +11,15 @@ var App = function () {
             header = headerList.item(0);
 
             var resizeFunction = function () {
-                scrollTop = document.body.scrollTop;
+                scrollTop = document.body.scrollTop || window.pageYOffset;
                 if (scrollTop > 0) {
                     header.classList.add('scrolled');
                 } else {
                     header.classList.remove('scrolled');
                 }
             }
+
+            resizeFunction();
 
             window.addEventListener('scroll', resizeFunction);
         }

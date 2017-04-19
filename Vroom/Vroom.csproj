@@ -78,6 +78,8 @@
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\LICENSE.txt" />
     <Content Include="Assets\fonts\Roboto\fonts\Roboto-regular\Roboto-regular.svg" />
     <Content Include="Assets\img\325iBanner.jpg" />
+    <Content Include="Assets\img\AnimatedBanner.gif" />
+    <Content Include="Assets\img\arrow.svg" />
     <Content Include="Assets\img\BlackE30.jpg" />
     <Content Include="Assets\img\BlackE30Thumb.jpg" />
     <Content Include="Assets\img\BlackSinger911.jpg" />
@@ -92,14 +94,20 @@
     <Content Include="Assets\img\FordMustang.jpg" />
     <Content Include="Assets\img\FordMustangThumbnail.jpg" />
     <Content Include="Assets\img\FrontRed.jpg" />
+    <Content Include="Assets\img\GridBG.png" />
     <Content Include="Assets\img\GT40.jpg" />
     <Content Include="Assets\img\Gt40OnTrackThumb.jpg" />
     <Content Include="Assets\img\GT40ParkedOnStreetBanner.jpg" />
     <Content Include="Assets\img\GT40ParkedOnStreetThumb.jpg" />
     <Content Include="Assets\img\GT40Thumbnail.jpg" />
     <Content Include="Assets\img\GulfGT40.jpg" />
+    <Content Include="Assets\img\Miura.jpg" />
+    <Content Include="Assets\img\MiuraTailLight.jpg" />
     <Content Include="Assets\img\MustangTailLights.jpg" />
     <Content Include="Assets\img\OpenQuote.svg" />
+    <Content Include="Assets\img\OrangeMiura.jpg" />
+    <Content Include="Assets\img\OrangeMiuraLeftBanner.jpg" />
+    <Content Include="Assets\img\OrangeMiuraRightBanner.jpg" />
     <Content Include="Assets\img\porsche.jpg" />
     <Content Include="Assets\img\RedE-TypeCityBanner.jpg" />
     <Content Include="Assets\img\RedE30Thumb.jpg" />
@@ -117,6 +125,7 @@
     <Content Include="cars\Default.aspx" />
     <Content Include="cars\FordGT40.aspx" />
     <Content Include="cars\JaguarE-Type.aspx" />
+    <Content Include="cars\LamborghiniMiura.aspx" />
     <Content Include="cars\Porsche911.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="cars\FordMustang.aspx" />
@@ -167,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gulpfile.js" />
+    <Content Include="SiteMap.aspx" />
     <Content Include="Suggestions.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -220,6 +230,13 @@
     <Compile Include="cars\JaguarE-Type.aspx.designer.cs">
       <DependentUpon>JaguarE-Type.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cars\LamborghiniMiura.aspx.cs">
+      <DependentUpon>LamborghiniMiura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cars\LamborghiniMiura.aspx.designer.cs">
+      <DependentUpon>LamborghiniMiura.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cars\Porsche911.aspx.cs">
       <DependentUpon>Porsche911.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -248,6 +265,13 @@
     </Compile>
     <Compile Include="Assets\MasterPages\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMap.aspx.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMap.aspx.designer.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Suggestions.aspx.cs">
       <DependentUpon>Suggestions.aspx</DependentUpon>

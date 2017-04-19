@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Assets/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Vroom.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div class="header-padding"></div>
     <section class="hero-banner flex-center">
         <div class="container">
-            <h2>The most iconic automobiles ever produced</h2>
+            <h2>The Most Iconic Automobiles Ever Produced</h2>
             <p>Vroom curates a collection of automobiles that have changed the way we look at cars.</p>
         </div>
     </section>
@@ -16,7 +16,6 @@
             <div class="divider"></div>
             <p>Our selections are made based on two criteria.</p>
             <br />
-
             <div class="row">
                 <div class="col-md-2">
                     <div class="content-block">
@@ -37,10 +36,8 @@
                     <br />
                 </div>
             </div>
-            <br />
            
             <a href="/cars" class="btn btn-grey">View the collection <span class="btn-arrow"></span></a>
-
         </div>
     </section>
 

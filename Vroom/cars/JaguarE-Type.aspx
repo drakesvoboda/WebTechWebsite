@@ -41,7 +41,7 @@
                 </h3>
                 <p>
                     The designer of the Jaguar E-Type, Malcolm Sayer, had his roots in aerodynamics. He was an aerodynamicist who worked for the Bristol Aeroplane Company.
-                    The design of the E-Type was molded by the wind; the form of the E-Type was created in order to be most aerodynamics. A mathamiatition would tell you,
+                    The design of the E-Type was molded by the wind; the form of the E-Type was created in order to be most aerodynamics. A mathematician would tell you,
                     it is of no surprise that a design based on science and numbers turned out so beautiful.     
                 </p>
                 
@@ -95,25 +95,25 @@ comprehensively as the Jaguar E-type.
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/BMW.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>BMW E30</h3>
+                <a href="/cars/Porsche911.aspx" class="car-tile">
+                    <img src="/Assets/img/porsche.jpg" alt="Porsche 911"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Porsche 911</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>Porsche 911</h3>
+                <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
+                    <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura"/>
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Lamborghini Miura</span>
                             <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">

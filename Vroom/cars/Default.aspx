@@ -5,7 +5,7 @@
     <section class="banner flex-center">
         <div class="container">
             <h2>The Cars</h2>
-            <p>Below are some of the cars that we believe have changed the automobile industry.</p>
+            <p>Below are some of the cars that have shaped the automobile industry.</p>
         </div>
     </section>
 
@@ -69,7 +69,7 @@
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" alt="Lamborghini Miura"/>
+                    <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura"/>
                     <span class="tile-content">
                         <span>
                             <span class="h3">Lamborghini Miura</span>
