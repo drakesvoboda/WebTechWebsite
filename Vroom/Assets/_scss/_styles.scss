@@ -12,7 +12,7 @@ $banner-padding-tablet: 60px;
 $banner-padding-mobile: 30px;
 
 @mixin bodyFont() {
-    font-family: 'Droid Serif', 'Times New Roman', Times, serif ;
+    font-family: 'Droid Serif', 'Times New Roman', Times, serif;
 }
 
 @mixin headingFont() {
@@ -342,10 +342,12 @@ header {
     height: 250px;
     line-height: 1.2;
     font-size: 1.2em;
-    background: rgba(15, 15, 25, .3);
+    box-shadow: 0 0 1000px rgba(15, 15, 35, .5) inset;
+    background-image: url('../img/AnimatedBanner.gif');
+    background-size: cover;
     position: relative;
     color: #fff;
-    text-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    text-shadow: 0 0 6px rgba(0, 0, 0, .5);
     padding: $banner-padding-mobile 0;
 
     @include breakpoint($bp-m) {
@@ -358,19 +360,6 @@ header {
         padding: $banner-padding 0;
     }
 
-    :after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('../img/AnimatedBanner.gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        z-index: -1;
-    }
 
     P {
         margin: 0;
