@@ -32,7 +32,7 @@
     <main>
         <div class="banner">
             <div class="container">
-                <h3>The First Super Car Ever
+                <h3>The First Super Car&mdash;Ever
                 </h3>
                 <p>
                     Lamborghini shook up the automobile world by producing the first ever mid engine production car. The Miura created the blueprint for what a super car is today.

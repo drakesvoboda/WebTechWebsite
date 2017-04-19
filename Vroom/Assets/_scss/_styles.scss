@@ -405,13 +405,17 @@ header {
         font-weight: 300;
         font-size: .6em;
         position: absolute;
-        bottom: 5px;
-        right: 10px;
+        bottom: 0;
+        right: 0;
+        padding: 2px 6px;
+        opacity: 0;
+        background-color: $grey;
     }
 
     &:hover, &:focus {
         .image-reference {
             color: #fff;
+            opacity: 1;
         }
     }
 }
@@ -553,6 +557,10 @@ footer {
         color: $white;
         display: block;
         text-align: center;
+
+        &:hover, &:focus {
+            color: $primary-color;
+        }
     }
 
     nav {

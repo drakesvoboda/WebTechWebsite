@@ -10,13 +10,13 @@
 
             <form class="suggestion-form">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-sm-2">
                         <div class="input-group">
                             <label for="make">Make</label>
                             <input type="text" id="make" name="make" placeholder="DeLorean" />
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-sm-2">
                         <div class="input-group">
                             <label for="model">Model</label>
                             <input type="text" id="model" name="model" placeholder="DMC-12" />
