@@ -43,10 +43,22 @@
 
 
     <section class="related-cars">
+        <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/BMW.jpg" />
+                <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
+                    <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura">
+                    <span class="tile-content">
+                        <span>
+                            <span class="h3">Lamborghini Miura</span>
+                            <span class="btn"><i class="right-arrow"></i></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-2 col-1">
+                <a href="/cars/BMWE30.aspx" class="car-tile">
+                    <img src="/Assets/img/BMW.jpg" alt="BMW E30">
                     <span class="tile-content">
                         <span>
                             <span class="h3">BMW E30</span>
@@ -56,19 +68,8 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" />
-                    <span class="tile-content">
-                        <span>
-                            <span class="h3">Porsche 911</span>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
+                    <img src="/Assets/img/blueprint.jpg" alt="">
                     <span class="tile-content">
                         <span>
                             <span class="h3">More</span>

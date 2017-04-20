@@ -64,7 +64,7 @@
 
 
     <%-- Block Quote --%>
-    <section class="quote-banner">
+    <div class="quote-banner">
         <div class="container">
             <blockquote cite="http://www.complex.com/sports/2014/04/douglas-sonders-remembers-ford-mustang-impact">
                 The Ford Mustang has consistently been the affordable-yet-exciting dream machine for the American public. 
@@ -82,7 +82,7 @@
             </blockquote>
 
         </div>
-    </section>
+    </div>
 
     <%-- Related Cars Callout --%>
     <section class="related-cars">

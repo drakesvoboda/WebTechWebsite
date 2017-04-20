@@ -66,7 +66,7 @@
 
 
     <%-- Block Quote --%>
-    <section class="quote-banner">
+    <div class="quote-banner">
         <div class="container">
             <blockquote cite="https://www.thrillist.com/cars/nation/the-story-of-the-ford-gt40-told-by-25-rare-photos-of-le-mans-sebring-and-daytona">
                 There's not really another car as emotionally charged as the GT40. 
@@ -86,7 +86,7 @@
                 </div>
             </blockquote>
         </div>
-    </section>
+    </div>
 
     <%-- Related Cars Callout --%>
     <section class="related-cars">
@@ -116,7 +116,7 @@
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
+                    <img src="/Assets/img/blueprint.jpg" alt=""/>
                     <div class="tile-content">
                         <div>
                             <h3>More</h3>

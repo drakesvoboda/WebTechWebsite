@@ -19,7 +19,7 @@ gulp.task('sass', function () {
 
     var fontsStream = gulp.src('./Assets/fonts/**/css/*.css').pipe(concat('font-files'));   
 
-    var merged = merge(fontsStream, sassStream)
+    var merged = merge(sassStream, fontsStream)
         .pipe(concat('build.css'))
         .pipe(gulp.dest('./Assets/_build'));
 

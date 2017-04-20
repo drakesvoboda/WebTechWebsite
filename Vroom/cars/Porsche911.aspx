@@ -97,7 +97,7 @@
 
 
     <%-- Block Quote --%>
-    <section class="quote-banner">
+    <div class="quote-banner">
         <div class="container">
             <blockquote>
                 As creator of the Porsche 911, [Ferdinand Alexander Porsche] established a design culture that still molds our sports cars today. 
@@ -108,7 +108,7 @@
              </p>
             </blockquote>
         </div>
-    </section>
+    </div>
 
     <%-- Related Cars Callout --%>
     <section class="related-cars">
@@ -138,7 +138,7 @@
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
+                    <img src="/Assets/img/blueprint.jpg" alt=""/>
                     <div class="tile-content">
                         <div>
                             <h3>More</h3>

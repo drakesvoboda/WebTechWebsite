@@ -1741,7 +1741,7 @@ footer .developer-link {
   text-transform: uppercase;
   font-weight: 900;
   line-height: .7;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .input-group {

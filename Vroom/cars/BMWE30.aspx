@@ -99,7 +99,7 @@
 
 
     <%-- Block Quote --%>
-    <section class="quote-banner">
+    <div class="quote-banner">
         <div class="container">
             <blockquote cite="/">
                 For many, the generation of BMW 3-series built from 1982 until 1994—identified by enthusiasts with the car’s chassis code, E30—represent the ultimate “Ultimate Driving Machine.” Crisp handling coupled with driver-oriented ergonomics and timeless looks make even the economy-minded “eta” model a joy to drive. There’s something about the car that is appealing to a broad range of people, even today, something that makes it a modern classic.
@@ -112,7 +112,7 @@
              </div>
             </blockquote>
         </div>
-    </section>
+    </div>
 
     <%-- Related Cars Callout --%>
     <section class="related-cars">
@@ -142,7 +142,7 @@
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
+                    <img src="/Assets/img/blueprint.jpg" alt=""/>
                     <div class="tile-content">
                         <div>
                             <h3>More</h3>

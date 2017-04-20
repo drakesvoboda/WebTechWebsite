@@ -32,15 +32,13 @@
     <main>
         <div class="banner">
             <div class="container">
-                <h3>The First Super Car&mdash;Ever
-                </h3>
+                <h3>The First Super Car&mdash;Ever</h3>
                 <p>
                     Lamborghini shook up the automobile world by producing the first ever mid engine production car. The Miura created the blueprint for what a super car is today.
                     Debuted in 1966 at the Geneva Motor Show, the Miura garnered attention from everyone. Only three years after Lamborghini's founding, it forever changed
                     what we think of as a sports car. 
                 </p>
-                <br />
-                
+                <br /> 
             </div>
         </div>
     </main>
@@ -63,7 +61,7 @@
 
 
     <%-- Block Quote --%>
-    <section class="quote-banner">
+    <div class="quote-banner">
         <div class="container">
             <blockquote cite="http://jalopnik.com/how-the-lamborghini-miura-changed-the-supercar-game-for-483000703">
                 Why was the Miura such a big deal? Besides the fact that it looked amazing, 
@@ -79,7 +77,7 @@
                 </div>
             </blockquote>
         </div>
-    </section>
+    </div>
 
     <%-- Related Cars Callout --%>
     <section class="related-cars">
@@ -109,7 +107,7 @@
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
+                    <img src="/Assets/img/blueprint.jpg" alt=""/>
                     <div class="tile-content">
                         <div>
                             <h3>More</h3>

@@ -28,7 +28,7 @@
 
     <%-- Banner Image --%>
     <a href="https://i.redd.it/47xeh88pwply.jpg" target="_blank" class="banner-image">
-        <img src="../Assets/img/RedE-TypeCityBanner.jpg" />
+        <img src="../Assets/img/RedE-TypeCityBanner.jpg" alt="Red Jaguar E-Type overlooking the city" />
         <span class="image-reference">https://i.redd.it/47xeh88pwply.jpg</span>
     </a>
 
@@ -53,13 +53,13 @@
     <div class="row no-padding">
         <div class="col-sm-2">
             <a href="http://i.imgur.com/E6Tn85J.jpg" target="_blank" class="banner-image">
-                <img src="../Assets/img/ETypeInteriorThumb.jpg" />
+                <img src="../Assets/img/ETypeInteriorThumb.jpg" alt="Aerial shot of a Jaguar E-Type's interior"/>
                 <span class="image-reference">http://i.imgur.com/E6Tn85J.jpg</span>
             </a>
         </div>
         <div class="col-sm-2">
             <a href="http://i.imgur.com/VRoHMxU.jpg" target="_blank" class="banner-image">
-                <img src="../Assets/img/WhiteE-TypeThumb.jpg" />
+                <img src="../Assets/img/WhiteE-TypeThumb.jpg" alt="White E-Type parked in the woods"/>
                 <span class="image-reference">http://i.imgur.com/VRoHMxU.jpg</span>
             </a>
         </div>
@@ -67,18 +67,18 @@
 
 
     <%-- Block Quote --%>
-    <section class="quote-banner">
+    <div class="quote-banner">
         <div class="container">
             <blockquote cite="https://www.moma.org/d/c/exhibition_catalogues/W1siZiIsIjMwMDIwMTczOSJdLFsicCIsImVuY292ZXIiLCJ3d3cubW9tYS5vcmcvY2FsZW5kYXIvZXhoaWJpdGlvbnMvMjgyIiwiaHR0cHM6Ly93d3cubW9tYS5vcmcvY2FsZW5kYXIvZXhoaWJpdGlvbnMvMjgyP2xvY2FsZT1lbiIsImkiXV0.pdf?sha=4efb38e9c4adcc40">
                 The sleek sculptural
-lines of a well-designed sports car suggest move
-ment, speed, and the unimpeded flow of air over
-the chassis. These machines engender emotions
-unique to their class of automobile and aroused by
-few man-made objects. Rarely has one motorcar
-inspired such passions and combined the elements
-of beauty, performance, and even affordability as
-comprehensively as the Jaguar E-type.
+                lines of a well-designed sports car suggest move
+                ment, speed, and the unimpeded flow of air over
+                the chassis. These machines engender emotions
+                unique to their class of automobile and aroused by
+                few man-made objects. Rarely has one motorcar
+                inspired such passions and combined the elements
+                of beauty, performance, and even affordability as
+                comprehensively as the Jaguar E-type.
                 <div>
                     <p class="author">
                         Christopher Mount
@@ -88,7 +88,7 @@ comprehensively as the Jaguar E-type.
                 </div>
             </blockquote>
         </div>
-    </section>
+    </div>
 
     <%-- Related Cars Callout --%>
     <section class="related-cars">
@@ -118,7 +118,7 @@ comprehensively as the Jaguar E-type.
             </div>
             <div class="col-lg-3 col-md-2 col-1">
                 <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
+                    <img src="/Assets/img/blueprint.jpg" alt=""/>
                     <div class="tile-content">
                         <div>
                             <h3>More</h3>
