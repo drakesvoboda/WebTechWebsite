@@ -34,7 +34,9 @@
     </main>
 
     <script type="text/javascript">
-        alert("Please make a suggestion by filling out the form.")    
+        window.onload = function () { alert("Please make a suggestion by filling out the form."); }
+        
+        window.onunload = function () { alert("Thank you for making a suggestion."); }
     </script>
 
 </asp:Content>

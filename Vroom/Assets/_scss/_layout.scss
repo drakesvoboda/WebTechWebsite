@@ -1,14 +1,14 @@
 ﻿$gutter: 15px;
 $num_columns: 3;
 
-$bp-s: 420px;
-$bp-s-max: max-width ($bp-s - 1);
-$bp-m: 768px;
-$bp-m-max: max-width ($bp-m - 1);
-$bp-l: 992px;
-$bp-l-max: max-width ($bp-l - 1);
-$bp-xl: 1200px;
-$bp-xl-max: max-width ($bp-xl - 1);
+$bp-s: screen and 420px;
+$bp-s-max: screen and max-width($bp-s - 1);
+$bp-m: screen and 768px;
+$bp-m-max: screen and max-width($bp-m - 1);
+$bp-l: screen and 992px;
+$bp-l-max: screen and max-width($bp-l - 1);
+$bp-xl: screen and 1200px;
+$bp-xl-max: screen and max-width($bp-xl - 1);
 
 main {
     display: block;

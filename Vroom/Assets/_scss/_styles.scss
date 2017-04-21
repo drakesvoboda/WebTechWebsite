@@ -117,12 +117,12 @@ table {
     }
 
     th {
-        background-color: rgba($primary-color, .6);
+        background-color: rgba($primary-color, .7);
         border-bottom: 2px solid $white;
     }
 
     td {
-        background-color: rgba($primary-color, .3);
+        background-color: rgba($primary-color, .4);
     }
 
     tr:nth-of-type(2n) td {
@@ -345,6 +345,7 @@ header {
     img {
         width: 100%;
         display: block;
+        border: 0;
     }
 
     .btn {
@@ -425,6 +426,7 @@ header {
     img {
         width: 100%;
         display: block;
+        border: 0;
     }
 
     .image-reference {
@@ -649,6 +651,7 @@ footer {
     border: 1px solid $white;
     position: relative;
     transition: all .15s;
+    overflow: visible;
     cursor: pointer;
 
     .btn-arrow {
@@ -706,7 +709,7 @@ footer {
 }
 
 .related-cars {
-    .row {
+    .flex-row {
         background-color: $grey;
     }
 

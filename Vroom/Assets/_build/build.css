@@ -392,12 +392,12 @@ table td, table th {
 }
 
 table th {
-  background-color: rgba(141, 204, 193, 0.6);
+  background-color: rgba(141, 204, 193, 0.7);
   border-bottom: 2px solid #F6F8F7;
 }
 
 table td {
-  background-color: rgba(141, 204, 193, 0.3);
+  background-color: rgba(141, 204, 193, 0.4);
 }
 
 table tr:nth-of-type(2n) td {
@@ -613,13 +613,13 @@ header nav li {
   margin: 0;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: max-width(1199px)) {
   .car-tile .tile-content h3 {
     font-size: 1.15em;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: max-width(767px)) {
   .car-tile .tile-content h3 {
     font-size: 1em;
   }
@@ -628,6 +628,7 @@ header nav li {
 .car-tile img {
   width: 100%;
   display: block;
+  border: 0;
 }
 
 .car-tile .btn {
@@ -713,6 +714,7 @@ header nav li {
 .banner-image img {
   width: 100%;
   display: block;
+  border: 0;
 }
 
 .banner-image .image-reference {
@@ -940,6 +942,7 @@ footer .developer-link {
   border: 1px solid #F6F8F7;
   position: relative;
   transition: all .15s;
+  overflow: visible;
   cursor: pointer;
 }
 
@@ -994,7 +997,7 @@ footer .developer-link {
   }
 }
 
-.related-cars .row {
+.related-cars .flex-row {
   background-color: #060606;
 }
 
