@@ -72,7 +72,7 @@ blockquote:before {
   height: auto;
 }
 
-[class*=col] {
+[class*=col], .car-tile {
   float: none;
   width: auto;
   height: auto;

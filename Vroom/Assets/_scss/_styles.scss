@@ -19,6 +19,11 @@ $banner-padding-mobile: 30px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+body, html {
+    min-width: 375px;
+    min-height: 100vh;
+}
+
 body {
     margin: 0;
     font-size: 18px;
@@ -26,11 +31,19 @@ body {
     color: $grey;
     font-weight: 400;
     line-height: 1.5;
+    clear: both;
+    height: 100%;
     @include bodyFont();
+
 
     @include breakpoint($bp-m) {
         font-size: 20px;
     }
+}
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, th, label {
@@ -148,6 +161,10 @@ header {
         height: 100%;
     }
 
+    .brand {
+        margin-right: 30px;
+    }
+
     &.scrolled {
         background-color: $grey;
         border-bottom: 1px solid $grey;
@@ -158,7 +175,7 @@ header {
         h1 a, nav a, nav a {
             color: $white;
 
-            &:hover, &:focus{
+            &:hover, &:focus {
                 color: $accent-color;
             }
         }
@@ -267,9 +284,20 @@ header {
     display: block;
     text-decoration: none;
     height: 100%;
+    width: 100%;
     color: $white;
     background-color: $grey;
     transition: all .3s;
+    position: relative;
+    float: left;
+
+    @include breakpoint($bp-l) {
+        width: 50%;
+    }
+
+    @include breakpoint($bp-xl) {
+        width: 33.333334%;
+    }
 
     &:after {
         content: '';
@@ -279,7 +307,7 @@ header {
         right: 0;
         bottom: 0;
         background: rgba($grey, .72);
-        background: linear-gradient(to top, rgba($grey, .8) 0, rgba($grey, .72) 15%, rgba($grey, 0) 100%);
+        background: linear-gradient(to top, rgba($grey, .9) 0, rgba($grey, .82) 15%, rgba($grey, 0) 100%);
         transition: all .3s;
         mix-blend-mode: multiply;
     }
@@ -346,12 +374,12 @@ header {
     height: 250px;
     line-height: 1.2;
     font-size: 1.2em;
-    box-shadow: 0 0 1000px rgba(15, 15, 35, .5) inset;
+    box-shadow: 0 0 1000px rgba(15, 15, 35, .6) inset;
     background-image: url('../img/AnimatedBanner.gif');
     background-size: cover;
     position: relative;
     color: #fff;
-    text-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 1);
     padding: $banner-padding-mobile 0;
 
     @include breakpoint($bp-m) {

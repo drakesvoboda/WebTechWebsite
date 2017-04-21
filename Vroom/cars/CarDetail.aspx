@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="header-padding"></div>
-        <div class="container">
+    <div class="container">
         <ul class="bread list-inline">
             <li><a href="/cars">Cars</a></li>
             <li>Porsche 911</li>
@@ -113,45 +113,43 @@
         </div>
     </section>
 
-           <%-- Related Cars Callout --%>
+    <%-- Related Cars Callout --%>
     <section class="related-cars">
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
-            <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/BMW.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>BMW E30</h3>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
+
+            <a href="/cars/cardetail.aspx" class="car-tile">
+                <img src="/Assets/img/BMW.jpg" />
+                <div class="tile-content">
+                    <div>
+                        <h3>BMW E30</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
                     </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/cardetail.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>Porsche 911</h3>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
+                </div>
+            </a>
+
+            <a href="/cars/cardetail.aspx" class="car-tile">
+                <img src="/Assets/img/porsche.jpg" />
+                <div class="tile-content">
+                    <div>
+                        <h3>Porsche 911</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
                     </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" />
-                    <div class="tile-content">
-                        <div>
-                            <h3>More</h3>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
+                </div>
+            </a>
+
+            <a href="/cars" class="car-tile">
+                <img src="/Assets/img/blueprint.jpg" />
+                <div class="tile-content">
+                    <div>
+                        <h3>More</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
-        
+
+
     </section>
 
 

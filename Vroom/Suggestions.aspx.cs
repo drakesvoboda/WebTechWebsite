@@ -12,6 +12,8 @@ namespace Vroom
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Make A Suggestion";
+            Page.MetaDescription = "Suggest a car that you belive should be included on our website.";
+            Page.MetaKeywords= "classic cars,influetial cars,automotive industry,vroom suggest a car";
         }
         protected void Page_PreRender(object sender, EventArgs e)
         {

@@ -8,7 +8,7 @@
             <h2>Do you have a car in mind that we haven't included?</h2>
             <p>Fill out the form below to make a suggestion.</p>
 
-            <form class="suggestion-form">
+            <form method="post" action="mailto:drakesvoboda@gmail.com" class="suggestion-form">
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="input-group">
@@ -34,7 +34,7 @@
     </main>
 
     <script type="text/javascript">
-        //alert("Please make a suggestion by filling out the form.")    
+        alert("Please make a suggestion by filling out the form.")    
     </script>
 
 </asp:Content>

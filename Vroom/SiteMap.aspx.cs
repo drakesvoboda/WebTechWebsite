@@ -12,6 +12,8 @@ namespace Vroom
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Site Map";
+            Page.MetaDescription = "This is the Site Map for Vroom. View all of our pages.";
+            Page.MetaKeywords = "classic cars,vroom,cars,automotive,vehicles,car design";
         }
     }
 }

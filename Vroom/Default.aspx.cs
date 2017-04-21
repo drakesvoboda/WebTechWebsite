@@ -12,6 +12,8 @@ namespace Vroom
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Homepage";
+            Page.MetaDescription = "Vroom curates a collection of automobiles that have changed the way we look at cars.";
+            Page.MetaKeywords = "classic cars,vroom,cars,automotive,vehicles,car design";
         }
     }
 }

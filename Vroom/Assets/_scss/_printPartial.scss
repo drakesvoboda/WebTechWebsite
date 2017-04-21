@@ -75,7 +75,7 @@ blockquote:before {
     }
 }
 
-[class*=col] {
+[class*=col], .car-tile {
     float: none;
     width: auto;
     height: auto;

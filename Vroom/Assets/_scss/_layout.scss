@@ -1,5 +1,5 @@
 ﻿$gutter: 15px;
-$num_columns: 12;
+$num_columns: 3;
 
 $bp-s: 420px;
 $bp-s-max: max-width ($bp-s - 1);
@@ -10,22 +10,7 @@ $bp-l-max: max-width ($bp-l - 1);
 $bp-xl: 1200px;
 $bp-xl-max: max-width ($bp-xl - 1);
 
-html {
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-body {
-    clear: both;
-    height: 100%;
-}
-
-body, html {
-    min-width: 375px;
-    min-height: 100vh;
-}
-
-main{
+main {
     display: block;
 }
 
@@ -46,7 +31,7 @@ main{
 }
 
 @mixin allcol($media) {
-    @for $i from 1 through $num_columns {
+    @for $i from 2 through $num_columns {
         &-#{$i} {
             padding-left: $gutter;
             padding-right: $gutter;
@@ -78,9 +63,11 @@ main{
 }
 
 @mixin nopadding {
-    &-12, &-11, &-10, &-9, &-8, &-7, &-6, &-5, &-4, &-3, &-2, &-1 {
-        padding-left: 0;
-        padding-right: 0;
+    @for $i from 2 through $num_columns {
+        &-#{$i} {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
 
@@ -93,9 +80,7 @@ main{
         margin-right: 0;
 
         > .col {
-            @include nopadding;
-
-            &-sm, &-md, &-lg, &-xl {
+           &, &-sm, &-md {
                 @include nopadding;
             }
         }
@@ -120,67 +105,6 @@ main{
     @include allcol($bp-m);
 }
 
-.col-lg {
-    @include allcol($bp-l);
-}
-
-.col-xl {
-    @include allcol($bp-xl);
-}
-
-.hidden-xl {
-    @include breakpoint($bp-xl-max) {
-        display: none !important;
-    }
-}
-
-.hidden-lg {
-    @include breakpoint($bp-l-max) {
-        display: none !important;
-    }
-}
-
-.hidden-md {
-    @include breakpoint($bp-m-max) {
-        display: none !important;
-    }
-}
-
-.hidden-sm {
-    @include breakpoint($bp-s-max) {
-        display: none !important;
-    }
-}
-
-.hidden {
-    display: none !important;
-}
-
-.visible-xl {
-    @include breakpoint($bp-xl) {
-        display: none !important;
-    }
-}
-
-.visible-lg {
-    @include breakpoint($bp-l) {
-        display: none !important;
-    }
-}
-
-.visible-md {
-    @include breakpoint($bp-m) {
-        display: none !important;
-    }
-}
-
-.visible-sm {
-    @include breakpoint($bp-s) {
-        display: none !important;
-    }
-}
-
-
 .flex {
     &-row {
         display: flex;
@@ -189,8 +113,11 @@ main{
         flex-wrap: wrap;
         clear: both;
 
-        .contaner:before, .container:after, .row:before, .row:after {
-            content: normal;
+
+        &:before, &:after {
+            display: table;
+            content: " ";
+            clear: both;
         }
     }
 

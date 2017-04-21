@@ -12,6 +12,8 @@ namespace Vroom.cars
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Jaguar E-Type";
+            Page.MetaDescription = "The Jaguar E-Type is the most beautiful car ever made. Learn More!";
+            Page.MetaKeywords = "Jaguar,Jaguar E-Type,E-Type,E Type,Malcolm Sayer,aerodynamic design";
         }
     }
 }

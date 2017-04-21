@@ -10,8 +10,8 @@
     </section>
 
     <main>
-        <div class="row flex-row no-padding">
-            <div class="col-lg-3 col-md-2 col-1">
+        <div class="flex-row">
+            
                 <a href="/cars/BMWE30.aspx" class="car-tile">
                     <img src="/Assets/img/BMW.jpg" alt="BMW E30"/>
                     <span class="tile-content">
@@ -21,8 +21,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/Porsche911.aspx" class="car-tile">
                     <img src="/Assets/img/porsche.jpg" alt="Porsche 911"/>
                     <span class="tile-content">
@@ -32,9 +31,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/FordMustang.aspx" class="car-tile">
                     <img src="/Assets/img/FordMustangThumbnail.jpg" alt="Ford Mustang"/>
                     <span class="tile-content">
@@ -44,8 +41,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/FordGT40.aspx" class="car-tile">
                     <img src="/Assets/img/GT40Thumbnail.jpg" alt="Ford GT40"/>
                     <span class="tile-content">
@@ -55,8 +51,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/JaguarE-Type.aspx" class="car-tile">
                     <img src="/Assets/img/EType.jpg" alt="Jaguar E-Type"/>
                     <span class="tile-content">
@@ -66,8 +61,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
                     <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura"/>
                     <span class="tile-content">
@@ -78,6 +72,6 @@
                     </span>
                 </a>
             </div>
-        </div>
+   
     </main>
 </asp:Content>

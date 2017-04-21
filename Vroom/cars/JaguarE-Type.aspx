@@ -94,7 +94,7 @@
     <section class="related-cars">
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
-            <div class="col-lg-3 col-md-2 col-1">
+           
                 <a href="/cars/Porsche911.aspx" class="car-tile">
                     <img src="/Assets/img/porsche.jpg" alt="Porsche 911"/>
                     <span class="tile-content">
@@ -104,8 +104,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
                     <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura"/>
                     <span class="tile-content">
@@ -115,8 +114,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars" class="car-tile">
                     <img src="/Assets/img/blueprint.jpg" alt=""/>
                     <div class="tile-content">
@@ -126,7 +124,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            
         </div>
 
     </section>

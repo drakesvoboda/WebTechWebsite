@@ -12,6 +12,8 @@ namespace Vroom.cars
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Lamborghini Miura";
+            Page.MetaDescription = "The First Super Car. Learn more about the Lamborghini Miura";
+            Page.MetaKeywords = "super car,lamborghini,miura,lamborghini miura,mid engine,Ferruccio Lamborghini";
         }
     }
 }

@@ -33,8 +33,7 @@
     <div>
         <div class="banner">
             <div class="container">
-                <h3>
-                    With its "boxy" style and sporty performance, the E30 series of sedans produced by BMW are 1980<small>s</small> classics.
+                <h3>With its "boxy" style and sporty performance, the E30 series of sedans produced by BMW are 1980<small>s</small> classics.
                 </h3>
                 <p>
                     The BMW E30 was a luxury sedan produced by BMW from 1982 to 1994. The first BMW M3 was introduced on the E30 platform. 
@@ -117,40 +116,34 @@
     <%-- Related Cars Callout --%>
     <section class="related-cars">
         <h5>Related Cars</h5>
-        <div class="row flex-row no-padding">
-            <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/FordMustang.aspx" class="car-tile">
-                    <img src="/Assets/img/FordMustangThumbnail.jpg" alt="Ford Mustang"/>
-                    <span class="tile-content">
-                        <span>
-                            <span class="h3">Ford Mustang</span>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </span>
+        <div class="flex-row">
+            <a href="/cars/FordMustang.aspx" class="car-tile">
+                <img src="/Assets/img/FordMustangThumbnail.jpg" alt="Ford Mustang" />
+                <span class="tile-content">
+                    <span>
+                        <span class="h3">Ford Mustang</span>
+                        <span class="btn"><i class="right-arrow"></i></span>
                     </span>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars/Porsche911.aspx" class="car-tile">
-                    <img src="/Assets/img/porsche.jpg" alt="Porsche 911"/>
-                    <span class="tile-content">
-                        <span>
-                            <span class="h3">Porsche 911</span>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </span>
+                </span>
+            </a>
+            <a href="/cars/Porsche911.aspx" class="car-tile">
+                <img src="/Assets/img/porsche.jpg" alt="Porsche 911" />
+                <span class="tile-content">
+                    <span>
+                        <span class="h3">Porsche 911</span>
+                        <span class="btn"><i class="right-arrow"></i></span>
                     </span>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
-                <a href="/cars" class="car-tile">
-                    <img src="/Assets/img/blueprint.jpg" alt=""/>
-                    <div class="tile-content">
-                        <div>
-                            <h3>More</h3>
-                            <span class="btn"><i class="right-arrow"></i></span>
-                        </div>
+                </span>
+            </a>
+            <a href="/cars" class="car-tile">
+                <img src="/Assets/img/blueprint.jpg" alt="" />
+                <div class="tile-content">
+                    <div>
+                        <h3>More</h3>
+                        <span class="btn"><i class="right-arrow"></i></span>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
 
     </section>

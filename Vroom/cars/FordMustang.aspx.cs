@@ -12,6 +12,8 @@ namespace Vroom
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Ford Mustang";
+            Page.MetaDescription = "The Ford Mustang is the first pony car. Learn More!";
+            Page.MetaKeywords = "Ford,Mustang,Ford Mustang,Pony Car,Muscle Car,classic cars,American cars";
         }
     }
 }

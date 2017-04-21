@@ -45,7 +45,7 @@
     <section class="related-cars">
         <h5>Related Cars</h5>
         <div class="row flex-row no-padding">
-            <div class="col-lg-3 col-md-2 col-1">
+            
                 <a href="/cars/LamborghiniMiura.aspx" class="car-tile">
                     <img src="/Assets/img/miura.jpg" alt="Lamborghini Miura">
                     <span class="tile-content">
@@ -55,8 +55,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+           
                 <a href="/cars/BMWE30.aspx" class="car-tile">
                     <img src="/Assets/img/BMW.jpg" alt="BMW E30">
                     <span class="tile-content">
@@ -66,8 +65,8 @@
                         </span>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-3 col-md-2 col-1">
+            
+            
                 <a href="/cars" class="car-tile">
                     <img src="/Assets/img/blueprint.jpg" alt="">
                     <span class="tile-content">
@@ -77,7 +76,7 @@
                         </span>
                     </span>
                 </a>
-            </div>
+           
         </div>
 
     </section>

@@ -12,6 +12,8 @@ namespace Vroom.cars
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Vroom | Porsche 911";
+            Page.MetaDescription = "The Porsche 911 is one of the most beautiful cars ever produced. Find out more!";
+            Page.MetaKeywords = "Porsce,911,Porsche 911,Ferdinand Porsche,Ferdinand Alexander Porsche";
         }
     }
 }
